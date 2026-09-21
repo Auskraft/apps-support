@@ -8,7 +8,7 @@
   <title>Auskraft — приложения Дмитрия Шварева</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Prata&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c1816'/%3E%3Cpath d='M18 44 30 18h5l11 26h-7l-2-6H26l-2 6Zm10-12h7l-3-8Z' fill='%23e9be69'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,7 +17,7 @@
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Auskraft — на главную">
-      <span class="brand-mark" aria-hidden="true">A</span>
+      <span class="brand-mark brand-mark-logo" aria-hidden="true"></span>
       <span>
         <strong>Auskraft</strong>
         <small>Дмитрий Шварев</small>
@@ -32,46 +32,40 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="eyebrow">Независимая Android-разработка</p>
         <h1>Бесплатные приложения для Android</h1>
-        <p class="hero-text">Я создаю понятные приложения для здоровья, работы, учёбы и повседневной жизни. Все они бесплатны, многие работают офлайн и без рекламы.</p>
+        <p class="hero-text">Я Дмитрий Шварев. Делаю приложения для здоровья, работы, учёбы и повседневных задач. В каталоге уже больше 24 приложений. Все бесплатные. Многие работают без интернета и рекламы.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#support">Поддержать</a>
-          <a class="catalog-link" href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Открыть каталог в RuStore</a>
+          <a class="catalog-link" href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Каталог в RuStore</a>
         </div>
       </div>
 
-      <div class="hero-summary" aria-label="О разработчике и каталоге">
-        <p>Дмитрий Шварев</p>
-        <h2>Независимый Android-разработчик</h2>
-        <dl>
-          <div><dt>В каталоге</dt><dd>24+ приложений</dd></div>
-          <div><dt>Стоимость</dt><dd>Все бесплатные</dd></div>
-          <div><dt>Площадка</dt><dd>RuStore</dd></div>
-        </dl>
+      <div class="logo-panel" aria-label="Auskraft">
+        <img class="hero-logo" src="logo.png" alt="Auskraft">
       </div>
     </section>
 
     <section class="section support-section" id="support">
       <div class="support-intro">
-        <p class="eyebrow">Добровольная поддержка</p>
         <h2>Поддержать разработку</h2>
-        <p>Поддержка помогает оплачивать время разработки, тестовые устройства и публикацию обновлений. Она добровольная и не открывает платные функции или преимущества.</p>
+        <p>Я делаю приложения один. Поддержка помогает мне тратить больше времени на обновления и покупать устройства для тестирования.</p>
+        <p>Оплата добровольная. Дополнительные функции за неё не открываются.</p>
       </div>
 
+      <h3 class="goals-title">На что коплю</h3>
       <div class="goal-grid" aria-label="Цели поддержки">
         <article class="goal-card goal-spiritual">
           <div class="goal-number">01</div>
           <div>
             <h3>Умра и Хадж</h3>
-            <p>Хочу совершить эту поездку осознанно и без спешки. Часть поддержки откладываю на важный для меня путь.</p>
+            <p>Хочу накопить на поездку.</p>
           </div>
         </article>
         <article class="goal-card goal-home">
           <div class="goal-number">02</div>
           <div>
             <h3>Квартира</h3>
-            <p>Часть поддержки откладываю на квартиру — долгосрочную цель и более устойчивую основу для дальнейшей разработки.</p>
+            <p>Коплю на собственную квартиру.</p>
           </div>
         </article>
       </div>
@@ -80,13 +74,13 @@
     <section class="section trust-section" aria-labelledby="trust-title">
       <div class="section-heading compact">
         <div>
-          <h2 id="trust-title">О поддержке</h2>
+          <h2 id="trust-title">Перед оплатой</h2>
         </div>
       </div>
       <div class="trust-grid">
-        <article><h3>Добровольно</h3><p>Приложения остаются бесплатными и не теряют функции, если вы не поддерживаете проект.</p></article>
-        <article><h3>С чеком</h3><p>Платёж учитывается как доход самозанятого, а плательщику формируется электронный чек.</p></article>
-        <article><h3>Через Robokassa</h3><p>Платёжные данные обрабатывает сервис. Этот сайт не получает и не хранит данные карты.</p></article>
+        <article><h3>Приложения</h3><p>Все приложения остаются бесплатными.</p></article>
+        <article><h3>Чек</h3><p>Я работаю как самозанятый. После оплаты придёт чек.</p></article>
+        <article><h3>Оплата</h3><p>Платёж проходит через Robokassa. Сайт не получает данные карты.</p></article>
       </div>
     </section>
   </main>
@@ -95,7 +89,7 @@
     <div class="footer-main">
       <div>
         <a class="brand footer-brand" href="#top">
-          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-mark brand-mark-logo" aria-hidden="true"></span>
           <span><strong>Auskraft</strong><small>Приложения Дмитрия Шварева</small></span>
         </a>
         <p>Спасибо, что пользуетесь моими приложениями.</p>
