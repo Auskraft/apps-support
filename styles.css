@@ -121,10 +121,6 @@ button, input { font: inherit; }
 .hero {
   width: min(calc(100% - 2rem), var(--max));
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  align-items: center;
-  gap: clamp(2rem, 5vw, 4.5rem);
   padding: 4rem 0 3.5rem;
 }
 
@@ -179,19 +175,6 @@ body:not(.legal-page) h3 { line-height: 1.35; }
 
 .catalog-link:hover, .catalog-link:focus-visible { color: var(--ink); border-color: var(--gold); }
 
-.logo-panel {
-  width: 100%;
-  max-width: 360px;
-  aspect-ratio: 1;
-  justify-self: end;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 1.4rem;
-  background: var(--logo-slate);
-}
-
-.hero-logo { width: 100%; height: 100%; display: block; object-fit: contain; }
-
 .section { padding: 4.5rem max(1rem, calc((100vw - var(--max)) / 2)); }
 
 .section-heading {
@@ -207,6 +190,11 @@ body:not(.legal-page) h3 { line-height: 1.35; }
 .support-section { background: var(--bg); }
 .support-intro { max-width: 720px; margin-bottom: 2.5rem; }
 .support-intro p { max-width: 740px; margin-bottom: .65rem; color: var(--ink-muted); font-size: .9rem; }
+.payment-entry { max-width: 660px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin: 0 0 3rem; padding: 1.2rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); }
+.payment-entry p { max-width: 390px; margin: 0; color: var(--ink-muted); font-size: .82rem; }
+.payment-qr { flex: none; display: block; padding: .4rem; border-radius: .65rem; background: #fff; }
+.payment-qr img { width: 132px; height: 132px; display: block; image-rendering: crisp-edges; }
+.payment-qr:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 .goals-title { margin: 0 0 1rem; color: var(--ink); font-size: 1rem; font-weight: 500; }
 .goal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.15rem; }
 .goal-card {
@@ -286,8 +274,7 @@ body:not(.legal-page) h3 { line-height: 1.35; }
 .legal-footer { padding-top: 2rem; }
 
 @media (max-width: 960px) {
-  .hero { grid-template-columns: 1fr; padding-top: 3.5rem; }
-  .logo-panel { max-width: 380px; justify-self: start; }
+  .hero { padding-top: 3.5rem; }
   .goal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .goal-card:last-child { grid-column: 1 / -1; }
   .goal-card:last-child .goal-image { aspect-ratio: 16 / 7; }
@@ -307,10 +294,12 @@ body:not(.legal-page) h3 { line-height: 1.35; }
   .hero-actions { align-items: stretch; flex-direction: column; }
   .hero-actions .button { width: 100%; }
   .catalog-link { align-self: center; padding: .3rem 0; }
-  .logo-panel { width: min(100%, 300px); justify-self: center; }
   .section { padding-top: 4.5rem; padding-bottom: 4.5rem; }
   .section-heading { align-items: start; flex-direction: column; }
   .goal-grid { grid-template-columns: minmax(0, 1fr); }
+  .payment-entry { padding: 1rem; }
+  .payment-entry p { max-width: none; }
+  .payment-qr { display: none; }
   .trust-grid { grid-template-columns: 1fr; }
   .goal-card:last-child { grid-column: auto; }
   .goal-card:last-child .goal-image { aspect-ratio: 4 / 3; }

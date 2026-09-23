@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c1816'/%3E%3Cpath d='M18 44 30 18h5l11 26h-7l-2-6H26l-2 6Zm10-12h7l-3-8Z' fill='%23e9be69'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260921-2">
+  <link rel="stylesheet" href="styles.css?v=20260923-3">
 </head>
 <body>
   <a class="skip-link" href="#main">К содержанию</a>
@@ -35,21 +35,25 @@
         <h1>Бесплатные приложения для Android</h1>
         <p class="hero-text">Я Дмитрий Шварев. Делаю приложения для здоровья, работы, учёбы и повседневных задач. В каталоге уже больше 24 приложений. Все бесплатные и без рекламы. Многие работают без интернета.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#support">Поддержать</a>
+          <a class="button button-primary" href="https://auth.robokassa.ru/merchant/Invoice/_sAbttk5SUaBCsIUUO9iPg" target="_blank" rel="noopener noreferrer">Поддержать</a>
           <a class="catalog-link" href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Каталог в RuStore</a>
         </div>
       </div>
 
-      <div class="logo-panel" aria-label="Auskraft">
-        <img class="hero-logo" src="logo.png" alt="Auskraft">
-      </div>
     </section>
 
     <section class="section support-section" id="support">
       <div class="support-intro">
         <h2>Поддержать разработку</h2>
         <p>Я делаю приложения один. Поддержка помогает мне тратить больше времени на обновления и покупать устройства для тестирования.</p>
-        <p>Оплата добровольная. Дополнительные функции за неё не открываются.</p>
+        <p>Поддержка добровольная. Она не открывает дополнительные функции и не создаёт обязательств по разработке.</p>
+      </div>
+
+      <div class="payment-entry">
+        <p>На странице Robokassa можно выбрать сумму от 100 ₽. Если открыли сайт на компьютере, отсканируйте QR-код телефоном.</p>
+        <a class="payment-qr" href="https://auth.robokassa.ru/merchant/Invoice/_sAbttk5SUaBCsIUUO9iPg" target="_blank" rel="noopener noreferrer" aria-label="Открыть страницу поддержки через Robokassa">
+          <img src="robokassa-support-qr.png" alt="QR-код для перехода на страницу поддержки" width="200" height="200" loading="lazy" decoding="async">
+        </a>
       </div>
 
       <h3 class="goals-title">На что коплю</h3>
@@ -84,13 +88,13 @@
     <section class="section trust-section" aria-labelledby="trust-title">
       <div class="section-heading compact">
         <div>
-          <h2 id="trust-title">Перед оплатой</h2>
+          <h2 id="trust-title">Перед переводом</h2>
         </div>
       </div>
       <div class="trust-grid">
         <article><h3>Приложения</h3><p>Все приложения остаются бесплатными.</p></article>
-        <article><h3>Чек</h3><p>Я работаю как самозанятый. После оплаты придёт чек.</p></article>
-        <article><h3>Оплата</h3><p>Платёж проходит через Robokassa. Сайт не получает данные карты.</p></article>
+        <article><h3>Подтверждение</h3><p>После перевода Robokassa отправит подтверждение операции.</p></article>
+        <article><h3>Перевод</h3><p>Перевод проходит через Robokassa. Сайт не получает данные карты.</p></article>
       </div>
     </section>
   </main>
