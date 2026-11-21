@@ -97,7 +97,7 @@
 
 .catalog-results {
   display: grid;
-  grid-template-columns: clamp(13.5rem, 29%, 23rem) minmax(0, 1fr);
+  grid-template-columns: clamp(20rem, 36%, 28rem) minmax(0, 1fr);
   gap: clamp(1.1rem, 2.4vw, 2rem);
   margin-top: 1rem;
 }
@@ -205,8 +205,18 @@
   transform: rotate(45deg);
 }
 
+.catalog-app:has(.catalog-ribbon) {
+  grid-template-columns: auto minmax(0, 1fr) fit-content(49%) auto;
+  column-gap: clamp(.25rem, 1vw, .55rem);
+}
+
+.catalog-app:has(.catalog-ribbon)::after {
+  grid-column: 4;
+}
+
 .catalog-ribbon {
-  grid-column: 2 / -1;
+  grid-area: 1 / 3;
+  min-width: 0;
   justify-self: start;
   width: max-content;
   max-width: 100%;
@@ -295,10 +305,18 @@
   display: inline-flex;
   align-items: center;
   min-height: 2rem;
-  margin-top: .25rem;
+  font-size: .9rem;
   color: var(--ink-muted);
   text-decoration: underline;
   text-underline-offset: .2em;
+}
+
+.catalog-release-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .25rem .85rem;
+  margin-top: .6rem;
 }
 
 .catalog-store-link:hover {
@@ -324,10 +342,6 @@
 }
 
 .catalog-latest {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: end;
-  gap: .9rem clamp(1rem, 2vw, 2rem);
   margin-top: clamp(1.4rem, 2.5vw, 2.2rem);
   padding-bottom: clamp(1.15rem, 2.4vw, 2rem);
   border-bottom: 1px solid var(--gold);
@@ -505,6 +519,23 @@
   outline-offset: 3px;
 }
 
+@media (max-width: 960px) {
+  .catalog-app-heading {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: .35rem .65rem;
+  }
+
+  .catalog-app-heading > div {
+    display: contents;
+  }
+
+  .catalog-description,
+  .catalog-release-actions {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 760px) {
   .catalog-results {
     display: block;
@@ -525,20 +556,6 @@
     font-size: .9rem;
   }
 
-  .catalog-app:has(.catalog-ribbon) {
-    grid-template-columns: auto minmax(0, 1fr) fit-content(49%) auto;
-    column-gap: clamp(.25rem, 1vw, .55rem);
-  }
-
-  .catalog-app:has(.catalog-ribbon)::after {
-    grid-column: 4;
-  }
-
-  .catalog-ribbon {
-    grid-area: 1 / 3;
-    min-width: 0;
-  }
-
   .catalog-ribbon::before,
   .catalog-ribbon::after {
     width: .5rem;
@@ -553,16 +570,6 @@
     padding-top: 1rem;
   }
 
-  .catalog-app-heading {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: .35rem .65rem;
-  }
-
-  .catalog-app-heading > div {
-    display: contents;
-  }
-
   .catalog-app-heading .catalog-icon {
     width: 2.5rem;
   }
@@ -574,11 +581,6 @@
   }
 
   .catalog-description,
-  .catalog-store-link {
-    grid-column: 1 / -1;
-  }
-
-  .catalog-description,
   .catalog-highlights p,
   .catalog-release-notes {
     font-size: .9375rem;
@@ -586,13 +588,10 @@
   }
 
   .catalog-store-link {
-    justify-self: start;
-    margin: 0;
     font-size: .875rem;
   }
 
   .catalog-latest {
-    grid-template-columns: minmax(0, 1fr);
     margin-top: .75rem;
   }
   .catalog-heading h1 {
