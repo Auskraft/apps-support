@@ -3,101 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Приложения независимого Android-разработчика Дмитрия Шварева и страница добровольной поддержки.">
-  <meta name="theme-color" content="#0c1816">
+  <meta name="description" content="Бесплатные Android-приложения независимого разработчика Дмитрия Шварева. Каталог Auskraft и добровольная поддержка разработки.">
+  <meta name="theme-color" content="#051e17">
   <title>Auskraft — приложения Дмитрия Шварева</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c1816'/%3E%3Cpath d='M18 44 30 18h5l11 26h-7l-2-6H26l-2 6Zm10-12h7l-3-8Z' fill='%23e9be69'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260923-3">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preload" as="image" href="assets/mashrabiya.webp">
+  <link rel="stylesheet" href="emerald.css">
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">К содержанию</a>
-
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Auskraft — на главную">
       <span class="brand-mark brand-mark-logo" aria-hidden="true"></span>
-      <span>
-        <strong>Auskraft</strong>
-        <small>Дмитрий Шварев</small>
-      </span>
+      <span><strong>Auskraft</strong><small>Дмитрий Шварев</small></span>
     </a>
     <nav aria-label="Основная навигация">
+      <a href="./" aria-current="page">Главная</a>
+      <a href="catalog.html">Каталог приложений</a>
+      <a href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Каталог на RuStore</a>
       <a href="offer.html">Оферта</a>
-      <a class="nav-cta" href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Каталог в RuStore</a>
     </nav>
   </header>
-
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <h1>Бесплатные приложения для Android</h1>
-        <p class="hero-text">Я Дмитрий Шварев. Делаю приложения для здоровья, работы, учёбы и повседневных задач. В каталоге уже больше 30 приложений. Все бесплатные и без рекламы. Многие работают без интернета.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://auth.robokassa.ru/merchant/Invoice/_sAbttk5SUaBCsIUUO9iPg" target="_blank" rel="noopener noreferrer">Поддержать</a>
-          <a class="catalog-link" href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Каталог в RuStore</a>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="section support-section" id="support">
-      <div class="support-intro">
-        <h2>Поддержать разработку</h2>
-        <p>Я делаю приложения один. Поддержка помогает мне тратить больше времени на обновления и покупать устройства для тестирования.</p>
-        <p>Поддержка добровольная. Она не открывает дополнительные функции и не создаёт обязательств по разработке.</p>
-      </div>
-
-      <div class="payment-entry">
-        <p>На странице Robokassa можно выбрать сумму от 100 ₽. Если открыли сайт на компьютере, отсканируйте QR-код телефоном.</p>
-        <a class="payment-qr" href="https://auth.robokassa.ru/merchant/Invoice/_sAbttk5SUaBCsIUUO9iPg" target="_blank" rel="noopener noreferrer" aria-label="Открыть страницу поддержки через Robokassa">
-          <img src="robokassa-support-qr.png" alt="QR-код для перехода на страницу поддержки" width="200" height="200" loading="lazy" decoding="async">
-        </a>
-      </div>
-
-      <h3 class="goals-title">На что коплю</h3>
-      <div class="goal-grid" aria-label="Цели поддержки">
-        <article class="goal-card goal-home">
-          <img class="goal-image" src="goal-apartment.jpg" alt="Ключи от квартиры на столе в светлой комнате" loading="lazy" decoding="async">
-          <div class="goal-copy">
-            <span class="goal-number">01</span>
-            <h3>Квартира</h3>
-            <p>Коплю на собственную квартиру.</p>
+    <div class="opening">
+      <img class="hero-art" src="assets/mashrabiya.webp" alt="" width="1448" height="1086" fetchpriority="high">
+      <div class="wrap opening-content">
+        <section class="intro" aria-labelledby="intro-title">
+          <h1 id="intro-title">Бесплатные приложения <span class="intro-platform">для Android</span></h1>
+          <p>Меня зовут <span class="author-names">Дмитрий / <bdi lang="ar" dir="rtl">سعيد</bdi></span>, я создаю бесплатные приложения без рекламы, для здоровья, учёбы и повседневных задач</p>
+          <a class="support-button" href="#support">Поддержать автора</a>
+        </section>
+        <section class="support" id="support" aria-labelledby="support-title">
+          <div class="support-copy">
+            <h2 id="support-title">Поддержать меня</h2>
+            <p>Если мои приложения вам пригодились, вы можете поддержать меня и мою семью.</p>
+            <a class="payment-link" href="https://auth.robokassa.ru/merchant/Invoice/_sAbttk5SUaBCsIUUO9iPg" target="_blank" rel="noopener noreferrer">Перейти в Robokassa <span aria-hidden="true">↗</span></a>
           </div>
-        </article>
-        <article class="goal-card goal-health">
-          <img class="goal-image" src="goal-health.jpg" alt="Две чашки, вода и органайзер для лекарств на домашнем столе" loading="lazy" decoding="async">
-          <div class="goal-copy">
-            <span class="goal-number">02</span>
-            <h3>Здоровье супруги и моё</h3>
-            <p>Средства на заботу о здоровье.</p>
-          </div>
-        </article>
-        <article class="goal-card goal-spiritual">
-          <img class="goal-image" src="goal-umrah-hajj.jpg" alt="Кааба на рассвете" loading="lazy" decoding="async">
-          <div class="goal-copy">
-            <span class="goal-number">03</span>
-            <h3>Умра / Хадж</h3>
-            <p>Коплю на поездку.</p>
-          </div>
-        </article>
+          <img class="payment-code" src="robokassa-support-qr.png" alt="Код для перевода через Robokassa" width="176" height="176">
+        </section>
+      </div>
+    </div>
+    <section class="wrap goals" aria-labelledby="goals-title">
+      <h2 id="goals-title">На что коплю</h2>
+      <div class="goals-grid">
+        <figure><img src="goal-apartment.jpg" alt="" width="640" height="320" loading="lazy"><figcaption>Квартира</figcaption></figure>
+        <figure><img src="goal-health.jpg" alt="" width="640" height="320" loading="lazy"><figcaption><span class="goal-health-caption"><span>Здоровье супруги и моё</span></span></figcaption></figure>
+        <figure><img src="goal-umrah-hajj.jpg" alt="" width="640" height="320" loading="lazy"><figcaption>Умра / Хадж</figcaption></figure>
       </div>
     </section>
-
-    <section class="section trust-section" aria-labelledby="trust-title">
-      <div class="section-heading compact">
-        <div>
-          <h2 id="trust-title">Перед переводом</h2>
-        </div>
-      </div>
-      <div class="trust-grid">
-        <article><h3>Приложения</h3><p>Все приложения остаются бесплатными.</p></article>
-        <article><h3>Подтверждение</h3><p>После перевода Robokassa отправит подтверждение операции.</p></article>
-        <article><h3>Перевод</h3><p>Перевод проходит через Robokassa. Сайт не получает данные карты.</p></article>
+    <section class="wrap transfer" aria-labelledby="transfer-title">
+      <h2 id="transfer-title">Перед переводом</h2>
+      <div class="transfer-grid">
+        <p><strong>Добровольная поддержка</strong>Все приложения остаются бесплатными. Перевод не открывает дополнительные функции.</p>
+        <p><strong>Подтверждение</strong>После перевода Robokassa отправит подтверждение операции.</p>
+        <p><strong>Платёжные данные</strong>Перевод проходит через Robokassa. Сайт не получает данные карты.</p>
       </div>
     </section>
   </main>
+
 
   <footer class="site-footer">
     <div class="footer-main">

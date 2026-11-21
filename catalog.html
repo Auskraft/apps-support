@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Бесплатные Android-приложения Auskraft, актуальные версии и история обновлений.">
+  <meta name="theme-color" content="#061d16">
+  <title>Каталог приложений — Auskraft</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="emerald.css">
+  <link rel="stylesheet" href="catalog.css">
+</head>
+<body class="catalog-page">
+  <a class="skip-link" href="#main">К содержанию</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="./" aria-label="Auskraft — на главную">
+      <span class="brand-mark brand-mark-logo" aria-hidden="true"></span>
+      <span><strong>Auskraft</strong><small>Дмитрий Шварев</small></span>
+    </a>
+    <nav aria-label="Основная навигация">
+      <a href="./">Главная</a>
+      <a href="catalog.html" aria-current="page">Каталог приложений</a>
+      <a href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Каталог на RuStore</a>
+      <a href="offer.html">Оферта</a>
+    </nav>
+  </header>
+
+  <main class="catalog-wrap" id="main">
+    <div class="catalog-heading">
+      <h1>Каталог приложений</h1>
+      <p class="catalog-intro-note">Здесь я публикую обновления, чтобы вы могли получить исправления и новые функции, пока идёт проверка в RuStore.</p>
+      <span class="catalog-ornament" aria-hidden="true"></span>
+    </div>
+    <div class="catalog-filters" aria-label="Категории приложений" role="group" hidden>
+      <button type="button" data-category="all" aria-pressed="true" aria-controls="catalog-results">Все приложения</button>
+      <button type="button" data-category="health" aria-pressed="false" aria-controls="catalog-results">Для здоровья</button>
+      <button type="button" data-category="work" aria-pressed="false" aria-controls="catalog-results">Для работы</button>
+      <button type="button" data-category="muslim" aria-pressed="false" aria-controls="catalog-results">Мусульманские</button>
+      <button type="button" data-category="pets" aria-pressed="false" aria-controls="catalog-results">Для животных</button>
+      <button type="button" data-category="tools" aria-pressed="false" aria-controls="catalog-results">Полезные инструменты</button>
+      <button type="button" data-category="games" aria-pressed="false" aria-controls="catalog-results">Игры</button>
+    </div>
+    <p class="catalog-announcement" id="catalog-announcement" role="status"></p>
+    <div class="catalog-results" id="catalog-results" hidden>
+      <section class="catalog-list" aria-labelledby="catalog-apps-heading">
+        <h2 id="catalog-apps-heading">Приложения</h2>
+        <div class="catalog-apps" id="catalog-apps" role="group" aria-labelledby="catalog-apps-heading"></div>
+      </section>
+      <div class="catalog-detail" id="catalog-detail"></div>
+    </div>
+    <p class="catalog-empty" id="catalog-empty" hidden>В этой категории пока нет приложений. <a href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Все приложения в RuStore</a></p>
+    <noscript>
+      <p class="catalog-empty">Включите JavaScript, чтобы просмотреть версии, или <a href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">откройте каталог в RuStore</a>.</p>
+    </noscript>
+  </main>
+
+  <template id="catalog-app-template">
+    <button class="catalog-app" type="button" aria-pressed="false" aria-controls="catalog-detail">
+      <span class="catalog-app-main">
+        <img class="catalog-icon" alt="" width="80" height="80" decoding="async">
+        <span class="catalog-app-name">
+          <span class="catalog-name-label"></span>
+          <span class="catalog-name-marquee" aria-hidden="true"></span>
+        </span>
+      </span>
+      <span class="catalog-ribbon"><span class="catalog-ribbon-label"></span></span>
+    </button>
+  </template>
+  <template id="catalog-detail-template">
+    <article aria-labelledby="current-app">
+      <div class="catalog-app-heading">
+        <img class="catalog-icon" alt="" width="144" height="144" decoding="async">
+        <div>
+          <h2 id="current-app"></h2>
+          <p class="catalog-description"></p>
+          <a class="catalog-store-link" target="_blank" rel="noopener">Открыть в RuStore</a>
+        </div>
+      </div>
+      <section class="catalog-highlights" aria-labelledby="catalog-highlights-heading">
+        <h3 id="catalog-highlights-heading">От автора</h3>
+        <p></p>
+      </section>
+      <div class="catalog-latest">
+        <div>
+          <div class="catalog-version-heading">
+            <p class="catalog-current-label">
+              <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 4h7.8l9 9a1.5 1.5 0 0 1 0 2.1l-5.2 5.2a1.5 1.5 0 0 1-2.1 0l-9.5-9.5Z"/><circle cx="8" cy="8.5" r="1"/></svg>
+              Версия
+            </p>
+            <p class="catalog-latest-number"></p>
+          </div>
+          <p class="catalog-release-notes"></p>
+        </div>
+        <div class="catalog-release-actions">
+          <a class="catalog-download catalog-download-primary" target="_blank" rel="noopener">
+            <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>
+            Скачать с Яндекс Диска
+          </a>
+          <p class="catalog-download-note">Ссылки на Яндекс Диск пока нет</p>
+        </div>
+      </div>
+      <details class="catalog-history" open>
+        <summary>Предыдущие версии</summary>
+        <ul></ul>
+      </details>
+    </article>
+  </template>
+  <template id="catalog-version-template">
+    <li>
+      <span class="catalog-version-number"></span>
+      <p class="catalog-release-notes"></p>
+      <a class="catalog-download" target="_blank" rel="noopener"></a>
+      <span class="catalog-download-note">Ссылки пока нет</span>
+    </li>
+  </template>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark brand-mark-logo" aria-hidden="true"></span>
+          <span><strong>Auskraft</strong><small>Приложения Дмитрия Шварева</small></span>
+        </a>
+        <p>Спасибо, что пользуетесь моими приложениями.</p>
+      </div>
+      <div class="footer-links">
+        <div><strong>Связаться</strong><a href="mailto:rustore.auskraft@protonmail.com">rustore.auskraft@protonmail.com</a></div>
+        <div><strong>Документы</strong><a href="offer.html">Публичная оферта</a><a href="offer.html#privacy">Обработка данных</a></div>
+        <div><strong>Каталог</strong><a href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Все приложения в RuStore</a></div>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>ИП Шварев Дмитрий Андреевич · ИНН 344114054339 · ОГРНИП 326344300127139</p>
+      <p>© <span id="year">2026</span> Auskraft</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="catalog-data.js" defer></script>
+  <script src="catalog.js" defer></script>
+</body>
+</html>

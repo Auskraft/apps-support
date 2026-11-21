@@ -1,0 +1,658 @@
+.catalog-wrap {
+  width: min(calc(100% - clamp(2rem, 8vw, 8rem)), 86rem);
+  margin-inline: auto;
+  padding-block: clamp(1.65rem, 2.8vw, 2.5rem) clamp(3rem, 6vw, 5rem);
+  min-height: 42rem;
+}
+
+.catalog-wrap [hidden] {
+  display: none;
+}
+
+.catalog-heading {
+  position: relative;
+  isolation: isolate;
+}
+
+.catalog-heading h1 {
+  position: relative;
+  margin: 0 0 .65rem;
+  max-width: none;
+  font: 400 clamp(1.9rem, 3.1vw, 2.65rem)/1.08 Georgia, serif;
+  letter-spacing: -.025em;
+}
+
+.catalog-intro-note {
+  max-width: 64ch;
+  margin: 0 0 clamp(1.1rem, 2vw, 1.5rem);
+  color: var(--ink-muted);
+  font-size: .95rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.catalog-ornament {
+  position: absolute;
+  z-index: -1;
+  top: -.9rem;
+  right: 0;
+  width: clamp(7rem, 14vw, 12rem);
+  aspect-ratio: 1;
+  pointer-events: none;
+  background: #09533e url("assets/mashrabiya.webp") 63% 48% / 268% auto no-repeat;
+  background-blend-mode: multiply;
+  opacity: .7;
+  mask-image: radial-gradient(circle, #000 17%, #000c 48%, transparent 72%);
+}
+
+.catalog-filters {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: clamp(.35rem, 1.2vw, 1.15rem);
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+  border-bottom: 1px solid var(--line);
+}
+
+.catalog-filters button {
+  position: relative;
+  flex: none;
+  min-height: 2.75rem;
+  padding: .35rem .4rem .55rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: clamp(.875rem, 1.1vw, 1rem);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.catalog-filters button[aria-pressed="true"] {
+  font-weight: 500;
+}
+
+.catalog-filters button[aria-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  background: var(--gold);
+}
+
+.catalog-filters button:hover {
+  color: var(--gold);
+}
+
+.catalog-announcement {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.catalog-results {
+  display: grid;
+  grid-template-columns: clamp(13.5rem, 29%, 23rem) minmax(0, 1fr);
+  gap: clamp(1.1rem, 2.4vw, 2rem);
+  margin-top: 1rem;
+}
+
+.catalog-list {
+  padding: 1rem clamp(.65rem, 1vw, .95rem) 0 0;
+  border-right: 1px solid var(--line);
+}
+
+.catalog-list h2 {
+  margin: 0 0 .5rem;
+  color: var(--ink-muted);
+  font: 500 .875rem/1.35 "Segoe UI", system-ui, sans-serif;
+}
+
+.catalog-apps {
+  display: grid;
+  gap: 0;
+  max-height: min(65vh, 36rem);
+  overflow-y: auto;
+  padding: .25rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.catalog-app {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .12rem .65rem;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.875rem;
+  padding: .43rem .55rem;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 65%, transparent);
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 450 .95rem/1.3 "Segoe UI", system-ui, sans-serif;
+  text-align: start;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.catalog-app-main {
+  display: contents;
+}
+
+.catalog-app-name {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.catalog-name-marquee {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: max-content;
+  white-space: nowrap;
+  visibility: hidden;
+  transform: translateY(-50%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .catalog-app:focus-visible .can-scroll {
+    --name-opacity: 0;
+    --name-moving: visible;
+    --name-animation: catalog-name-slide;
+  }
+
+  @media (hover: hover) {
+    .catalog-app:hover .can-scroll {
+      --name-opacity: 0;
+      --name-moving: visible;
+      --name-animation: catalog-name-slide;
+    }
+  }
+
+  .catalog-name-label {
+    opacity: var(--name-opacity, 1);
+  }
+
+  .catalog-name-marquee {
+    visibility: var(--name-moving, hidden);
+    animation: var(--name-animation, none) var(--name-duration, 2s) ease-in-out infinite alternate;
+  }
+
+}
+
+@keyframes catalog-name-slide {
+  0%, 18% { transform: translate(0, -50%); }
+  82%, 100% { transform: translate(var(--name-distance), -50%); }
+}
+
+.catalog-app::after {
+  content: "";
+  grid-area: 1 / 3;
+  width: .35rem;
+  height: .35rem;
+  margin-inline: .15rem;
+  border: solid var(--ink-muted);
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg);
+}
+
+.catalog-ribbon {
+  grid-column: 2 / -1;
+  justify-self: start;
+  width: max-content;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 1.1rem;
+  background: #e9d4a7 url("assets/ribbon-linen.png") center / 1.375rem repeat;
+  color: var(--bg-deep);
+  font: 550 .75rem/1.25 "Segoe UI", system-ui, sans-serif;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.catalog-ribbon-label {
+  min-width: 0;
+  padding: .08rem .18rem;
+}
+
+.catalog-ribbon::before,
+.catalog-ribbon::after {
+  content: "";
+  width: 1rem;
+  flex: 0 1 1rem;
+  align-self: stretch;
+  background: url("assets/ribbon-diamonds.png") right center / auto 1.1rem no-repeat;
+}
+
+.catalog-ribbon::after {
+  transform: scaleX(-1);
+}
+
+.catalog-app[aria-pressed="true"] {
+  box-shadow: inset 2px 0 var(--gold);
+  background: var(--surface);
+}
+
+.catalog-app:hover {
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.catalog-icon {
+  display: block;
+  flex: none;
+  width: 2rem;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 21%;
+  object-fit: contain;
+}
+
+.catalog-detail {
+  padding-block: clamp(.5rem, 1.3vw, 1.25rem) clamp(1rem, 2.75vw, 2.5rem);
+  min-width: 0;
+}
+
+.catalog-app-heading {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.4vw, 2.15rem);
+}
+
+.catalog-app-heading .catalog-icon {
+  width: clamp(2.5rem, 5vw, 4rem);
+}
+
+.catalog-app-heading > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.catalog-app-heading h2 {
+  margin: 0 0 .55rem;
+  font: 500 clamp(1.35rem, 2.5vw, 2.15rem)/1.15 "Segoe UI", system-ui, sans-serif;
+  letter-spacing: -.025em;
+}
+
+.catalog-description,
+.catalog-release-notes {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.catalog-store-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  margin-top: .25rem;
+  color: var(--ink-muted);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.catalog-store-link:hover {
+  color: var(--ink);
+}
+
+.catalog-highlights {
+  max-width: 62ch;
+  margin-top: 1rem;
+  padding-inline-start: .8rem;
+  border-inline-start: 2px solid var(--line);
+}
+
+.catalog-highlights h3 {
+  margin-bottom: .2rem;
+  color: var(--gold-bright);
+  font: 500 .9375rem/1.25 "Segoe UI", system-ui, sans-serif;
+}
+
+.catalog-highlights p {
+  color: var(--ink-muted);
+  line-height: 1.45;
+}
+
+.catalog-latest {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: .9rem clamp(1rem, 2vw, 2rem);
+  margin-top: clamp(1.4rem, 2.5vw, 2.2rem);
+  padding-bottom: clamp(1.15rem, 2.4vw, 2rem);
+  border-bottom: 1px solid var(--gold);
+}
+
+.catalog-symbol {
+  flex: none;
+  width: 1.05em;
+  height: 1.05em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.catalog-version-heading,
+.catalog-current-label {
+  display: flex;
+  align-items: center;
+  gap: .36rem;
+}
+
+.catalog-version-heading {
+  flex-wrap: wrap;
+  margin-bottom: .38rem;
+}
+
+.catalog-current-label {
+  color: var(--ink-muted);
+  font-size: .9rem;
+}
+
+.catalog-latest-number {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.035em;
+  font-variant-numeric: tabular-nums;
+}
+
+.catalog-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45em;
+  min-height: 2.75rem;
+  padding: .54rem 1rem;
+  border: 1px solid var(--gold);
+  border-radius: .7rem;
+  color: var(--gold);
+  font-size: clamp(.95rem, 1.45vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+}
+
+.catalog-history .catalog-download {
+  max-width: 15rem;
+}
+
+.catalog-download-primary {
+  width: fit-content;
+  max-width: 100%;
+  min-height: 2.75rem;
+  padding: .45rem .8rem;
+  border-radius: .55rem;
+  background: var(--gold);
+  color: var(--bg, #071c15);
+  font-size: .9rem;
+  font-weight: 550;
+}
+
+.catalog-download:hover {
+  background: var(--gold-bright, #f6d795);
+  color: var(--bg, #071c15);
+}
+
+.catalog-download-note {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: clamp(.85rem, 1.35vw, 1.15rem);
+  text-align: end;
+}
+
+.catalog-history {
+  margin-top: clamp(.8rem, 1.5vw, 1.4rem);
+}
+
+.catalog-history summary {
+  display: flex;
+  align-items: center;
+  gap: .55em;
+  width: fit-content;
+  min-height: 2.75rem;
+  color: var(--ink);
+  font: 500 clamp(1.05rem, 1.5vw, 1.25rem)/1.3 "Segoe UI", system-ui, sans-serif;
+  letter-spacing: -.02em;
+  list-style: none;
+  cursor: pointer;
+}
+
+.catalog-history summary::-webkit-details-marker {
+  display: none;
+}
+
+.catalog-history summary::after {
+  content: "";
+  width: .34em;
+  height: .34em;
+  margin-top: -.18em;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(45deg);
+}
+
+.catalog-history[open] summary::after {
+  margin-top: .18em;
+  transform: rotate(225deg);
+}
+
+.catalog-history summary:hover {
+  color: var(--gold);
+}
+
+.catalog-history ul {
+  margin: .6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-history li {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: clamp(.65rem, 2.1vw, 1.9rem);
+  min-height: clamp(4.25rem, 6vw, 5.4rem);
+  padding-block: .6rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.catalog-version-number {
+  min-width: clamp(4.35rem, 8vw, 7.25rem);
+  padding-inline-end: .6rem;
+  border-inline-end: 1px solid var(--line);
+  font-size: clamp(1.3rem, 2.5vw, 2.15rem);
+  font-weight: 500;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.025em;
+}
+
+.catalog-history .catalog-download-note {
+  min-width: min(14vw, 12rem);
+  margin: 0;
+  text-align: end;
+}
+
+.catalog-empty {
+  max-width: 40rem;
+  padding-block: clamp(1.75rem, 4vw, 3.5rem);
+  color: var(--ink-muted);
+}
+
+.catalog-empty a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.catalog-wrap :is(button, a, summary):focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .catalog-results {
+    display: block;
+  }
+
+  .catalog-list {
+    padding: 0 0 .85rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .catalog-apps {
+    max-height: min(36vh, 15rem);
+  }
+
+  .catalog-app {
+    min-height: 2.75rem;
+    font-size: .9rem;
+  }
+
+  .catalog-app:has(.catalog-ribbon) {
+    grid-template-columns: auto minmax(0, 1fr) fit-content(49%) auto;
+    column-gap: clamp(.25rem, 1vw, .55rem);
+  }
+
+  .catalog-app:has(.catalog-ribbon)::after {
+    grid-column: 4;
+  }
+
+  .catalog-ribbon {
+    grid-area: 1 / 3;
+    min-width: 0;
+  }
+
+  .catalog-ribbon::before,
+  .catalog-ribbon::after {
+    width: .5rem;
+    flex-basis: .5rem;
+  }
+
+  .catalog-app .catalog-icon {
+    width: 1.8rem;
+  }
+
+  .catalog-detail {
+    padding-top: 1rem;
+  }
+
+  .catalog-app-heading {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: .35rem .65rem;
+  }
+
+  .catalog-app-heading > div {
+    display: contents;
+  }
+
+  .catalog-app-heading .catalog-icon {
+    width: 2.5rem;
+  }
+
+  .catalog-app-heading h2 {
+    margin: 0;
+    font-size: clamp(1.3rem, 4.4vw, 1.65rem);
+    overflow-wrap: anywhere;
+  }
+
+  .catalog-description,
+  .catalog-store-link {
+    grid-column: 1 / -1;
+  }
+
+  .catalog-description,
+  .catalog-highlights p,
+  .catalog-release-notes {
+    font-size: .9375rem;
+    overflow-wrap: anywhere;
+  }
+
+  .catalog-store-link {
+    justify-self: start;
+    margin: 0;
+    font-size: .875rem;
+  }
+
+  .catalog-latest {
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: .75rem;
+  }
+  .catalog-heading h1 {
+    padding-right: 1.35rem;
+    font-size: clamp(1.75rem, 6.5vw, 2.5rem);
+  }
+
+  .catalog-ornament {
+    top: -.9rem;
+    right: -.25rem;
+    width: 7.5rem;
+    opacity: .53;
+  }
+
+  .catalog-filters {
+    flex-wrap: nowrap;
+    gap: .55rem;
+    overflow-x: auto;
+    padding: .25rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) transparent;
+  }
+
+  .catalog-filters button {
+    flex: none;
+    min-height: 2.75rem;
+    padding: .4rem .3rem;
+    font-size: .9375rem;
+    text-align: start;
+  }
+
+  .catalog-release-actions .catalog-download-note {
+    text-align: start;
+  }
+
+  .catalog-history li {
+    grid-template-columns: 4.25rem minmax(0, 1fr);
+    padding-block: .8rem;
+    row-gap: .4rem;
+  }
+
+  .catalog-version-number {
+    min-width: 0;
+    align-self: start;
+  }
+
+  .catalog-history .catalog-download,
+  .catalog-history .catalog-download-note {
+    grid-column: 2;
+    justify-self: start;
+    text-align: start;
+  }
+}
+
+@media (max-width: 360px) {
+  .catalog-app:has(.catalog-ribbon) {
+    grid-template-columns: auto minmax(0, 1fr) fit-content(49%);
+  }
+
+  .catalog-app:has(.catalog-ribbon)::after {
+    content: none;
+  }
+}
