@@ -64,6 +64,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible, select:focus-visib
 }
 .opening-content { padding-block: clamp(3rem, 3.9vw, 5rem) 2rem; }
 .intro { max-width: 52%; }
+.author-names { white-space: nowrap; }
 .intro h1 { font-size: clamp(3.5rem, 5.75vw, 6.35rem); letter-spacing: -.05em; line-height: .98; }
 .intro p, .support p {
   max-width: 34rem; margin-top: 1rem; font-size: clamp(1.03rem, 1.64vw, 1.48rem);
@@ -75,22 +76,16 @@ a:focus-visible, summary:focus-visible, button:focus-visible, select:focus-visib
   font-size: clamp(1.05rem, 1.45vw, 1.32rem); font-weight: 700;
 }
 .support-button:hover { background: var(--gold-bright); }
-.support { margin-top: clamp(3.1rem, 4.5vw, 5.3rem); max-width: 53%; scroll-margin-top: 1.5rem; }
+.support {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 1.25rem 2rem;
+  margin-top: clamp(3.1rem, 4.5vw, 5.3rem); max-width: min(56%, 44rem); scroll-margin-top: 1.5rem;
+}
+.support-copy { flex: 1 1 17rem; }
 .support h2 { font-size: clamp(2.1rem, 3.65vw, 3.85rem); letter-spacing: -.042em; }
 .support p { max-width: 38rem; margin-top: .65rem; }
-.support-actions {
-  display: flex; align-items: baseline; flex-wrap: wrap; column-gap: 1.5rem; row-gap: .6rem;
-  margin-top: 1rem;
-}
-.payment-link { color: var(--gold); font-size: 1.05rem; font-weight: 650; text-decoration: underline; text-underline-offset: .35em; }
+.payment-link { display: inline-block; margin-top: 1rem; color: var(--gold); font-size: 1.05rem; font-weight: 650; text-decoration: underline; text-underline-offset: .35em; }
 .payment-link:hover { color: var(--gold-bright); }
-.qr-details { color: var(--ink-muted); font-size: .92rem; }
-.qr-details summary { cursor: pointer; padding-block: .35rem; }
-.qr-details summary:hover { color: var(--ink); }
-.qr-details[open] { flex-basis: 100%; }
-.qr-content { margin-top: .5rem; display: flex; align-items: center; gap: 1rem; }
-.qr-content img { width: 11rem; height: 11rem; padding: .5rem; background: white; border-radius: .5rem; image-rendering: pixelated; }
-.qr-content p { max-width: 11rem; margin: 0; font-size: .9rem; }
+.payment-code { width: 11rem; height: 11rem; padding: .5rem; background: white; border-radius: .5rem; image-rendering: pixelated; }
 .goals, .transfer { border-top: 1px solid var(--line); padding-block: 2rem 2.35rem; }
 .goals h2, .transfer h2 { font-size: clamp(1.6rem, 2.15vw, 2.2rem); margin-bottom: 1rem; letter-spacing: -.035em; }
 .goals-grid, .transfer-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: clamp(.8rem, 1.6vw, 1.75rem); }

@@ -24,24 +24,22 @@ const appButtons = catalogApps.map((app) => {
   return button;
 });
 
-function setupDownload(link, version, url) {
-  link.href = url;
-  link.firstElementChild.textContent = "Скачать " + version;
+function renderDownload(container, apkUrl) {
+  const link = container.querySelector(".catalog-download");
+  if (apkUrl) {
+    link.href = apkUrl;
+    container.querySelector(".catalog-download-note").remove();
+  } else {
+    link.remove();
+  }
 }
 
 function renderRelease(release) {
   const row = versionTemplate.content.firstElementChild.cloneNode(true);
   row.querySelector(".catalog-version-number").textContent = release.version;
   row.querySelector(".catalog-release-notes").textContent = release.notes;
-  const link = row.querySelector("a");
-  const note = row.querySelector(".catalog-download-note");
-  if (release.apkUrl) {
-    setupDownload(link, release.version, release.apkUrl);
-    note.hidden = true;
-  } else {
-    link.hidden = true;
-    note.textContent = "APK недоступен";
-  }
+  row.querySelector(".catalog-download").textContent = `Скачать ${release.version} с Яндекс Диска`;
+  renderDownload(row, release.apkUrl);
   return row;
 }
 
@@ -51,18 +49,10 @@ function renderApp(app) {
   view.querySelector(".catalog-icon").src = app.icon;
   view.querySelector("h2").textContent = app.name;
   view.querySelector(".catalog-description").textContent = app.description;
+  view.querySelector(".catalog-store-link").href = app.storeUrl;
   view.querySelector(".catalog-latest-number").textContent = current.version;
   view.querySelector(".catalog-release-notes").textContent = current.notes;
-  const action = view.querySelector(".catalog-download-primary");
-  const note = view.querySelector(".catalog-download-note");
-  if (current.apkUrl) {
-    setupDownload(action, current.version, current.apkUrl);
-    note.hidden = true;
-  } else {
-    action.href = app.storeUrl;
-    action.firstElementChild.textContent = "Открыть в RuStore";
-    note.textContent = "APK пока недоступен";
-  }
+  renderDownload(view.querySelector(".catalog-release-actions"), current.apkUrl);
 
   view.querySelector(".catalog-history").hidden = previous.length === 0;
   view.querySelector(".catalog-history ul").replaceChildren(...previous.map(renderRelease));
@@ -96,7 +86,7 @@ filters.addEventListener("click", (event) => {
   }
   announcement.textContent = matchingApps.length > 0
     ? active.textContent + ". Приложений: " + matchingApps.length + ". Выбрано: " + selectedApp.name
-    : "В этой категории пока нет приложений в каталоге APK.";
+    : "В этой категории пока нет приложений.";
 });
 
 selectApp(selectedApp);

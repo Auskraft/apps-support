@@ -1,16 +1,16 @@
 // Версии идут от новой к старой. Для каждой версии укажите собственную публичную
-// HTTPS-ссылку на APK в apkUrl. Если файл недоступен, оставьте null.
+// HTTPS-ссылку на файл .apk на Яндекс Диске в поле apkUrl. Если её нет, оставьте null.
 const catalogApps = [
   {
     name: "Pure PDF",
     icon: "assets/apps/pure-pdf.png",
     categories: ["work", "study"],
-    description: "Офлайн-читалка PDF с поиском, закладками и ночным режимом.",
+    description: "Читайте документы без интернета. Есть поиск по тексту, закладки и ночной режим.",
     storeUrl: "https://www.rustore.ru/catalog/app/com.auskraft.purepdf",
     releases: [
       {
         version: "1.8.4",
-        notes: "Увеличен QR-код на экране поддержки.",
+        notes: "Код для перевода на экране поддержки стал крупнее.",
         apkUrl: null,
       },
       {
