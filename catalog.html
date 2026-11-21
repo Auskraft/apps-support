@@ -8,7 +8,7 @@
   <title>Каталог приложений — Auskraft</title>
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="emerald.css">
-  <link rel="stylesheet" href="catalog.css">
+  <link rel="stylesheet" href="catalog.css?v=history-2">
 </head>
 <body class="catalog-page">
   <a class="skip-link" href="#main">К содержанию</a>
@@ -77,7 +77,7 @@
           <div class="catalog-release-actions">
             <a class="catalog-download catalog-download-primary" target="_blank" rel="noopener">
               <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>
-              Скачать с Яндекс Диска
+              Скачать с Я.диска
             </a>
             <p class="catalog-download-note">Ссылки на Яндекс Диск пока нет</p>
             <a class="catalog-store-link" target="_blank" rel="noopener">Открыть в RuStore</a>
@@ -98,19 +98,30 @@
         </div>
         <p class="catalog-release-notes"></p>
       </div>
-      <details class="catalog-history" open>
-        <summary>Предыдущие версии</summary>
-        <ul></ul>
+      <details class="catalog-history">
+        <summary id="history-heading">История версий</summary>
+        <div class="catalog-history-frame">
+          <table id="release-history" aria-labelledby="history-heading">
+            <thead>
+              <tr><th scope="col">Версия</th><th scope="col">Что изменилось</th><th scope="col">Файл APK Я.Диск</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </details>
     </article>
   </template>
   <template id="catalog-version-template">
-    <li>
-      <span class="catalog-version-number"></span>
-      <p class="catalog-release-notes"></p>
-      <a class="catalog-download" target="_blank" rel="noopener"></a>
-      <span class="catalog-download-note">Ссылки пока нет</span>
-    </li>
+    <tr>
+      <th scope="row" class="catalog-version-number"></th>
+      <td class="catalog-release-notes"></td>
+      <td>
+        <a class="catalog-download" target="_blank" rel="noopener">
+          <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>
+          Скачать
+        </a>
+      </td>
+    </tr>
   </template>
 
   <footer class="site-footer">
@@ -135,7 +146,7 @@
   </footer>
 
   <script src="script.js" defer></script>
-  <script src="catalog-data.js" defer></script>
-  <script src="catalog.js" defer></script>
+  <script src="catalog-data.js?v=history-2" defer></script>
+  <script src="catalog.js?v=history-2" defer></script>
 </body>
 </html>
