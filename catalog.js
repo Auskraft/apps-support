@@ -115,7 +115,7 @@ filters.addEventListener("click", (event) => {
     selectApp(matchingApps[0]);
   }
   announcement.textContent = matchingApps.length > 0
-    ? active.textContent + ". Приложений: " + matchingApps.length + ". Выбрано: " + selectedApp.name
+    ? active.textContent.trim() + ". Приложений: " + matchingApps.length + ". Выбрано: " + selectedApp.name
     : "В этой категории пока нет приложений.";
 });
 

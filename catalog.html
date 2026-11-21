@@ -8,7 +8,7 @@
   <title>Каталог приложений — Auskraft</title>
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="emerald.css">
-  <link rel="stylesheet" href="catalog.css?v=history-2">
+  <link rel="stylesheet" href="catalog.css?v=category-haze-2">
 </head>
 <body class="catalog-page">
   <a class="skip-link" href="#main">К содержанию</a>
@@ -33,13 +33,55 @@
       <span class="catalog-ornament" aria-hidden="true"></span>
     </div>
     <div class="catalog-filters" aria-label="Категории приложений" role="group" hidden>
-      <button type="button" data-category="all" aria-pressed="true" aria-controls="catalog-results">Все приложения</button>
-      <button type="button" data-category="health" aria-pressed="false" aria-controls="catalog-results">Для здоровья</button>
-      <button type="button" data-category="work" aria-pressed="false" aria-controls="catalog-results">Для работы</button>
-      <button type="button" data-category="muslim" aria-pressed="false" aria-controls="catalog-results">Мусульманские</button>
-      <button type="button" data-category="pets" aria-pressed="false" aria-controls="catalog-results">Для животных</button>
-      <button type="button" data-category="tools" aria-pressed="false" aria-controls="catalog-results">Полезные инструменты</button>
-      <button type="button" data-category="games" aria-pressed="false" aria-controls="catalog-results">Игры</button>
+      <button type="button" data-category="all" aria-pressed="true" aria-controls="catalog-results">
+        <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/>
+          <rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>
+        </svg>
+        Все приложения
+      </button>
+      <button type="button" data-category="health" aria-pressed="false" aria-controls="catalog-results">
+        <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.5 5.2a5.2 5.2 0 0 0-7.3 0L12 6.4l-1.2-1.2a5.2 5.2 0 0 0-7.3 7.4L12 21l8.5-8.4a5.2 5.2 0 0 0 0-7.4Z"/>
+          <path d="M5 11.7h3.7l1.7-3.1 2.7 6.2 1.8-3.1h3.7"/>
+        </svg>
+        Для здоровья
+      </button>
+      <button type="button" data-category="work" aria-pressed="false" aria-controls="catalog-results">
+        <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="2.5" y="7" width="19" height="14" rx="2.5"/>
+          <path d="M8 7V5.5A2.5 2.5 0 0 1 10.5 3h3A2.5 2.5 0 0 1 16 5.5V7M3 12.5a27 27 0 0 0 18 0M12 13.9v2"/>
+        </svg>
+        Для работы
+      </button>
+      <button type="button" data-category="muslim" aria-pressed="false" aria-controls="catalog-results">
+        <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 3a9 9 0 1 0 9 11.5A7.7 7.7 0 0 1 12 3Z"/>
+          <path d="m18 2 .9 2.5 2.6 1-2.6.9L18 9l-.9-2.6-2.6-.9 2.6-1Z"/>
+        </svg>
+        Мусульманские
+      </button>
+      <button type="button" data-category="pets" aria-pressed="false" aria-controls="catalog-results">
+        <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <ellipse cx="4.5" cy="10" rx="1.8" ry="2.4"/><ellipse cx="9.2" cy="5.8" rx="1.8" ry="2.5"/>
+          <ellipse cx="14.8" cy="5.8" rx="1.8" ry="2.5"/><ellipse cx="19.5" cy="10" rx="1.8" ry="2.4"/>
+          <path d="M6 16.1c2.1-2 2.8-5 6-5s3.9 3 6 5c2.5 2.8.4 5.8-2.7 4.8a10 10 0 0 0-6.6 0c-3.1 1-5.2-2-2.7-4.8Z"/>
+        </svg>
+        Для животных
+      </button>
+      <button type="button" data-category="tools" aria-pressed="false" aria-controls="catalog-results">
+        <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.5 8.5a6 6 0 0 1-7.7 5.9l-6.4 6.4a2.2 2.2 0 0 1-3.1-3.1l6.4-6.4A6 6 0 0 1 17 3.5l-3.6 3.6.8 2.7 2.7.8 3.5-3.5Z"/>
+        </svg>
+        Полезные инструменты
+      </button>
+      <button type="button" data-category="games" aria-pressed="false" aria-controls="catalog-results">
+        <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M8.5 6.5h7c3 0 4.8 1.8 5.4 5l.9 5c.5 3-1.7 4.2-3.8 2.4l-2.8-2.4H8.8L6 18.9c-2.1 1.8-4.3.6-3.8-2.4l.9-5c.6-3.2 2.4-5 5.4-5Z"/>
+          <path d="M5.7 11.7h4.6M8 9.4V14"/><circle cx="15.5" cy="12.8" r=".65"/><circle cx="18" cy="10.3" r=".65"/>
+        </svg>
+        Игры
+      </button>
     </div>
     <p class="catalog-announcement" id="catalog-announcement" role="status"></p>
     <div class="catalog-results" id="catalog-results" hidden>
@@ -103,7 +145,7 @@
         <div class="catalog-history-frame">
           <table id="release-history" aria-labelledby="history-heading">
             <thead>
-              <tr><th scope="col">Версия</th><th scope="col">Что изменилось</th><th scope="col">Файл APK Я.Диск</th></tr>
+              <tr><th scope="col">Версия</th><th scope="col">Что изменилось</th><th scope="col">Файл APK</th></tr>
             </thead>
             <tbody></tbody>
           </table>
@@ -147,6 +189,6 @@
 
   <script src="script.js" defer></script>
   <script src="catalog-data.js?v=history-2" defer></script>
-  <script src="catalog.js?v=history-2" defer></script>
+  <script src="catalog.js?v=category-icons-1" defer></script>
 </body>
 </html>

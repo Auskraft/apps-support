@@ -57,32 +57,107 @@
 
 .catalog-filters button {
   position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: .45em;
   flex: none;
   min-height: 2.75rem;
-  padding: .35rem .4rem .55rem;
+  padding: .4rem .55rem;
   border: 0;
-  border-radius: 0;
+  border-radius: .45rem;
   background: transparent;
   color: var(--ink);
   font-size: clamp(.875rem, 1.1vw, 1rem);
   white-space: nowrap;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.catalog-filters button::before,
+.catalog-filters button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.catalog-filters button::before {
+  background: radial-gradient(ellipse 50% 48% at center, color-mix(in srgb, var(--gold) 27%, transparent), transparent);
 }
 
 .catalog-filters button[aria-pressed="true"] {
-  font-weight: 500;
-}
-
-.catalog-filters button[aria-pressed="true"]::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 2px;
-  background: var(--gold);
-}
-
-.catalog-filters button:hover {
   color: var(--gold);
+  text-shadow: 0 1px 2px var(--bg);
+}
+
+.catalog-filters button[aria-pressed="true"]::before {
+  opacity: 1;
+}
+
+.catalog-filters button[aria-pressed="true"] .catalog-symbol {
+  stroke-width: 2.25;
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--gold) 50%, transparent));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .catalog-filters button {
+    transition: color 150ms ease-out;
+  }
+
+  .catalog-filters button::before {
+    transition: opacity 200ms ease-out;
+  }
+
+  .catalog-filters button[aria-pressed="true"]::after {
+    inset-block-start: 50%;
+    background:
+      radial-gradient(ellipse 32% 47% at 32% 53%, color-mix(in srgb, var(--gold) 64%, transparent), transparent),
+      radial-gradient(ellipse 35% 45% at 65% 53%, color-mix(in srgb, var(--gold) 52%, transparent), transparent),
+      radial-gradient(ellipse 49% 45% at 49% 49%, color-mix(in srgb, var(--gold-bright) 20%, transparent), transparent);
+    transform-origin: center bottom;
+    animation: catalog-category-haze 1100ms ease-out;
+  }
+
+  .catalog-filters .catalog-symbol {
+    transition: transform 320ms cubic-bezier(.2, .8, .32, 1.45);
+  }
+
+  .catalog-filters button[aria-pressed="true"] .catalog-symbol {
+    transform: translateY(-2px) scale(1.15);
+  }
+
+  .catalog-filters button:active .catalog-symbol {
+    transform: scale(.9);
+    transition-duration: 100ms;
+  }
+}
+
+@keyframes catalog-category-haze {
+  0% {
+    opacity: 0;
+    transform: translate(-24%, 3px) scale(.32, .72);
+  }
+  18% { opacity: 1; }
+  48% { opacity: .82; }
+  100% {
+    opacity: 0;
+    transform: translate(10%, -2px) scale(1.2, 1.1);
+  }
+}
+
+@media (hover: hover) {
+  .catalog-filters button[aria-pressed="false"]:hover {
+    background: color-mix(in srgb, var(--ink) 6%, transparent);
+  }
+}
+
+@media (forced-colors: active) {
+  .catalog-filters button[aria-pressed="true"] {
+    border: 1px solid Highlight;
+  }
 }
 
 .catalog-announcement {
@@ -164,29 +239,16 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .catalog-app:focus-visible .can-scroll {
-    --name-opacity: 0;
-    --name-moving: visible;
-    --name-animation: catalog-name-slide;
+  .can-scroll .catalog-name-label {
+    display: block;
+    white-space: nowrap;
+    opacity: 0;
   }
 
-  @media (hover: hover) {
-    .catalog-app:hover .can-scroll {
-      --name-opacity: 0;
-      --name-moving: visible;
-      --name-animation: catalog-name-slide;
-    }
+  .can-scroll .catalog-name-marquee {
+    visibility: visible;
+    animation: catalog-name-slide var(--name-duration, 2s) ease-in-out infinite alternate;
   }
-
-  .catalog-name-label {
-    opacity: var(--name-opacity, 1);
-  }
-
-  .catalog-name-marquee {
-    visibility: var(--name-moving, hidden);
-    animation: var(--name-animation, none) var(--name-duration, 2s) ease-in-out infinite alternate;
-  }
-
 }
 
 @keyframes catalog-name-slide {
@@ -530,6 +592,10 @@
 .catalog-wrap :is(button, a, summary):focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 3px;
+}
+
+.catalog-filters button:focus-visible {
+  outline-offset: -2px;
 }
 
 @media (max-width: 960px) {
