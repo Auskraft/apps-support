@@ -50,6 +50,7 @@
   flex-wrap: nowrap;
   column-gap: clamp(.35rem, 1.2vw, 1.15rem);
   overflow-x: auto;
+  overflow-y: hidden;
   scrollbar-width: thin;
   scrollbar-color: var(--line) transparent;
   border-bottom: 1px solid var(--line);
@@ -59,6 +60,7 @@
   position: relative;
   isolation: isolate;
   display: inline-flex;
+  overflow: clip;
   align-items: center;
   gap: .45em;
   flex: none;
