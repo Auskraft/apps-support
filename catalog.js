@@ -43,28 +43,20 @@ const appButtons = catalogApps.map((app) => {
   return button;
 });
 
-function renderDownload(container, apkUrl) {
-  const link = container.querySelector(".catalog-download");
-  if (apkUrl) {
-    link.href = apkUrl;
-    container.querySelector(".catalog-download-note").remove();
-  } else {
-    link.remove();
-  }
-}
-
 function renderRelease(release) {
   const row = versionTemplate.content.firstElementChild.cloneNode(true);
   row.querySelector(".catalog-version-number").textContent = release.version;
-  row.querySelector(".catalog-release-notes").textContent = release.notes;
-  row.querySelector(".catalog-download").textContent = `Скачать ${release.version} с Яндекс Диска`;
-  renderDownload(row, release.apkUrl);
+  row.querySelector(".catalog-release-notes").textContent = release.notes || "Изменения не указаны";
+  const download = row.querySelector(".catalog-download");
+  download.href = release.apkUrl;
+  download.setAttribute("aria-label", `Скачать версию ${release.version} с Яндекс Диска`);
   return row;
 }
 
 function renderApp(app) {
   const view = detailTemplate.content.firstElementChild.cloneNode(true);
-  const [current, ...previous] = app.releases;
+  const availableReleases = app.releases.filter(release => release.apkUrl?.trim());
+  const [current] = availableReleases;
   view.querySelector(".catalog-icon").src = app.icon;
   view.querySelector("h2").textContent = app.name;
   view.querySelector(".catalog-description").textContent = app.description;
@@ -80,12 +72,19 @@ function renderApp(app) {
   } else {
     storeLink.remove();
   }
-  view.querySelector(".catalog-latest-number").textContent = current.version;
-  view.querySelector(".catalog-release-notes").textContent = current.notes;
-  renderDownload(view.querySelector(".catalog-release-actions"), current.apkUrl);
-
-  view.querySelector(".catalog-history").hidden = previous.length === 0;
-  view.querySelector(".catalog-history ul").replaceChildren(...previous.map(renderRelease));
+  const download = view.querySelector(".catalog-download-primary");
+  const history = view.querySelector(".catalog-history");
+  if (current) {
+    download.href = current.apkUrl;
+    view.querySelector(".catalog-download-note").remove();
+    view.querySelector(".catalog-latest-number").textContent = current.version;
+    view.querySelector(".catalog-release-notes").textContent = current.notes;
+    history.querySelector("tbody").replaceChildren(...availableReleases.map(renderRelease));
+  } else {
+    download.remove();
+    view.querySelector(".catalog-latest").remove();
+    history.remove();
+  }
   detail.replaceChildren(view);
 }
 
