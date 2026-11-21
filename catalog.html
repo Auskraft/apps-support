@@ -74,7 +74,14 @@
         <div>
           <h2 id="current-app"></h2>
           <p class="catalog-description"></p>
-          <a class="catalog-store-link" target="_blank" rel="noopener">Открыть в RuStore</a>
+          <div class="catalog-release-actions">
+            <a class="catalog-download catalog-download-primary" target="_blank" rel="noopener">
+              <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>
+              Скачать с Яндекс Диска
+            </a>
+            <p class="catalog-download-note">Ссылки на Яндекс Диск пока нет</p>
+            <a class="catalog-store-link" target="_blank" rel="noopener">Открыть в RuStore</a>
+          </div>
         </div>
       </div>
       <section class="catalog-highlights" aria-labelledby="catalog-highlights-heading">
@@ -82,23 +89,14 @@
         <p></p>
       </section>
       <div class="catalog-latest">
-        <div>
-          <div class="catalog-version-heading">
-            <p class="catalog-current-label">
-              <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 4h7.8l9 9a1.5 1.5 0 0 1 0 2.1l-5.2 5.2a1.5 1.5 0 0 1-2.1 0l-9.5-9.5Z"/><circle cx="8" cy="8.5" r="1"/></svg>
-              Версия
-            </p>
-            <p class="catalog-latest-number"></p>
-          </div>
-          <p class="catalog-release-notes"></p>
+        <div class="catalog-version-heading">
+          <p class="catalog-current-label">
+            <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 4h7.8l9 9a1.5 1.5 0 0 1 0 2.1l-5.2 5.2a1.5 1.5 0 0 1-2.1 0l-9.5-9.5Z"/><circle cx="8" cy="8.5" r="1"/></svg>
+            Версия
+          </p>
+          <p class="catalog-latest-number"></p>
         </div>
-        <div class="catalog-release-actions">
-          <a class="catalog-download catalog-download-primary" target="_blank" rel="noopener">
-            <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>
-            Скачать с Яндекс Диска
-          </a>
-          <p class="catalog-download-note">Ссылки на Яндекс Диск пока нет</p>
-        </div>
+        <p class="catalog-release-notes"></p>
       </div>
       <details class="catalog-history" open>
         <summary>Предыдущие версии</summary>
