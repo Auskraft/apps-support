@@ -10,10 +10,29 @@ const versionTemplate = document.getElementById("catalog-version-template");
 
 let selectedApp = catalogApps[0];
 
+const nameWidths = new ResizeObserver((entries) => {
+  for (const { target, contentRect } of entries) {
+    const track = target.querySelector(".catalog-name-marquee");
+    const overflow = Math.ceil(track.getBoundingClientRect().width - contentRect.width);
+    target.classList.toggle("can-scroll", contentRect.width > 0 && overflow > 1);
+    target.style.setProperty("--name-distance", -overflow + "px");
+    target.style.setProperty("--name-duration", Math.max(2, overflow / 30 + 1) + "s");
+  }
+});
+
 const appButtons = catalogApps.map((app) => {
   const button = appTemplate.content.firstElementChild.cloneNode(true);
   button.querySelector("img").src = app.icon;
-  button.querySelector("span").textContent = app.name;
+  const name = button.querySelector(".catalog-app-name");
+  name.querySelector(".catalog-name-label").textContent = app.name;
+  name.querySelector(".catalog-name-marquee").textContent = app.name;
+  nameWidths.observe(name);
+  const ribbon = button.querySelector(".catalog-ribbon");
+  if (app.badgeText) {
+    ribbon.querySelector(".catalog-ribbon-label").textContent = app.badgeText;
+  } else {
+    ribbon.remove();
+  }
   button.addEventListener("click", () => {
     if (selectedApp !== app) {
       selectApp(app);
@@ -49,7 +68,18 @@ function renderApp(app) {
   view.querySelector(".catalog-icon").src = app.icon;
   view.querySelector("h2").textContent = app.name;
   view.querySelector(".catalog-description").textContent = app.description;
-  view.querySelector(".catalog-store-link").href = app.storeUrl;
+  const highlights = view.querySelector(".catalog-highlights");
+  if (app.highlights) {
+    highlights.querySelector("p").textContent = app.highlights;
+  } else {
+    highlights.remove();
+  }
+  const storeLink = view.querySelector(".catalog-store-link");
+  if (app.storeUrl) {
+    storeLink.href = app.storeUrl;
+  } else {
+    storeLink.remove();
+  }
   view.querySelector(".catalog-latest-number").textContent = current.version;
   view.querySelector(".catalog-release-notes").textContent = current.notes;
   renderDownload(view.querySelector(".catalog-release-actions"), current.apkUrl);
@@ -79,6 +109,7 @@ filters.addEventListener("click", (event) => {
     button.hidden = category !== "all" && !catalogApps[index].categories.includes(category);
   });
   const matchingApps = catalogApps.filter((app, index) => !appButtons[index].hidden);
+  appList.scrollTop = 0;
   results.hidden = matchingApps.length === 0;
   empty.hidden = !results.hidden;
   if (matchingApps.length > 0 && !matchingApps.includes(selectedApp)) {

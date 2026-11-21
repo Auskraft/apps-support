@@ -21,7 +21,7 @@
     <nav aria-label="Основная навигация">
       <a href="./">Главная</a>
       <a href="catalog.html" aria-current="page">Каталог приложений</a>
-      <a href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">RuStore</a>
+      <a href="https://www.rustore.ru/catalog/developer/nc3745" target="_blank" rel="noopener">Каталог на RuStore</a>
       <a href="offer.html">Оферта</a>
     </nav>
   </header>
@@ -29,13 +29,17 @@
   <main class="catalog-wrap" id="main">
     <div class="catalog-heading">
       <h1>Каталог приложений</h1>
+      <p class="catalog-intro-note">Здесь я публикую обновления, чтобы вы могли получить исправления и новые функции, пока идёт проверка в RuStore.</p>
       <span class="catalog-ornament" aria-hidden="true"></span>
     </div>
     <div class="catalog-filters" aria-label="Категории приложений" role="group" hidden>
       <button type="button" data-category="all" aria-pressed="true" aria-controls="catalog-results">Все приложения</button>
+      <button type="button" data-category="health" aria-pressed="false" aria-controls="catalog-results">Для здоровья</button>
       <button type="button" data-category="work" aria-pressed="false" aria-controls="catalog-results">Для работы</button>
-      <button type="button" data-category="study" aria-pressed="false" aria-controls="catalog-results">Для учёбы</button>
-      <button type="button" data-category="health" aria-pressed="false" aria-controls="catalog-results">Здоровье</button>
+      <button type="button" data-category="muslim" aria-pressed="false" aria-controls="catalog-results">Мусульманские</button>
+      <button type="button" data-category="pets" aria-pressed="false" aria-controls="catalog-results">Для животных</button>
+      <button type="button" data-category="tools" aria-pressed="false" aria-controls="catalog-results">Полезные инструменты</button>
+      <button type="button" data-category="games" aria-pressed="false" aria-controls="catalog-results">Игры</button>
     </div>
     <p class="catalog-announcement" id="catalog-announcement" role="status"></p>
     <div class="catalog-results" id="catalog-results" hidden>
@@ -53,8 +57,14 @@
 
   <template id="catalog-app-template">
     <button class="catalog-app" type="button" aria-pressed="false" aria-controls="catalog-detail">
-      <img class="catalog-icon" alt="" width="80" height="80" decoding="async">
-      <span></span>
+      <span class="catalog-app-main">
+        <img class="catalog-icon" alt="" width="80" height="80" decoding="async">
+        <span class="catalog-app-name">
+          <span class="catalog-name-label"></span>
+          <span class="catalog-name-marquee" aria-hidden="true"></span>
+        </span>
+      </span>
+      <span class="catalog-ribbon"><span class="catalog-ribbon-label"></span></span>
     </button>
   </template>
   <template id="catalog-detail-template">
@@ -67,14 +77,26 @@
           <a class="catalog-store-link" target="_blank" rel="noopener">Открыть в RuStore</a>
         </div>
       </div>
+      <section class="catalog-highlights" aria-labelledby="catalog-highlights-heading">
+        <h3 id="catalog-highlights-heading">От автора</h3>
+        <p></p>
+      </section>
       <div class="catalog-latest">
         <div>
-          <p class="catalog-current-label">Актуальная версия</p>
-          <p class="catalog-latest-number"></p>
+          <div class="catalog-version-heading">
+            <p class="catalog-current-label">
+              <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 4h7.8l9 9a1.5 1.5 0 0 1 0 2.1l-5.2 5.2a1.5 1.5 0 0 1-2.1 0l-9.5-9.5Z"/><circle cx="8" cy="8.5" r="1"/></svg>
+              Версия
+            </p>
+            <p class="catalog-latest-number"></p>
+          </div>
           <p class="catalog-release-notes"></p>
         </div>
         <div class="catalog-release-actions">
-          <a class="catalog-download catalog-download-primary" target="_blank" rel="noopener">Скачать с Яндекс Диска</a>
+          <a class="catalog-download catalog-download-primary" target="_blank" rel="noopener">
+            <svg class="catalog-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v11m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>
+            Скачать с Яндекс Диска
+          </a>
           <p class="catalog-download-note">Ссылки на Яндекс Диск пока нет</p>
         </div>
       </div>
