@@ -43,10 +43,25 @@ const appButtons = catalogApps.map((app) => {
   return button;
 });
 
+function renderReleaseNotes(container, notes) {
+  if (!Array.isArray(notes)) {
+    container.textContent = notes || "Изменения не указаны";
+    return;
+  }
+
+  const list = document.createElement("ul");
+  for (const note of notes) {
+    const item = document.createElement("li");
+    item.textContent = note;
+    list.append(item);
+  }
+  container.append(list);
+}
+
 function renderRelease(release) {
   const row = versionTemplate.content.firstElementChild.cloneNode(true);
   row.querySelector(".catalog-version-number").textContent = release.version;
-  row.querySelector(".catalog-release-notes").textContent = release.notes || "Изменения не указаны";
+  renderReleaseNotes(row.querySelector(".catalog-release-notes"), release.notes);
   const download = row.querySelector(".catalog-download");
   download.href = release.apkUrl;
   download.setAttribute("aria-label", `Скачать версию ${release.version} с Яндекс Диска`);
@@ -78,7 +93,7 @@ function renderApp(app) {
     download.href = current.apkUrl;
     view.querySelector(".catalog-download-note").remove();
     view.querySelector(".catalog-latest-number").textContent = current.version;
-    view.querySelector(".catalog-release-notes").textContent = current.notes;
+    renderReleaseNotes(view.querySelector(".catalog-release-notes"), current.notes);
     history.querySelector("tbody").replaceChildren(...availableReleases.map(renderRelease));
   } else {
     download.remove();
