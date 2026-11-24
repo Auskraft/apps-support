@@ -365,6 +365,15 @@
   line-height: 1.45;
 }
 
+.catalog-release-notes ul {
+  margin: 0;
+  padding-inline-start: 1.15em;
+}
+
+.catalog-release-notes li + li {
+  margin-block-start: .4em;
+}
+
 .catalog-store-link {
   display: inline-flex;
   align-items: center;
