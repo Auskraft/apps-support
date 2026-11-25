@@ -291,6 +291,7 @@ const catalogApps = [
     ],
     "description": "Календарь смен с гибкими циклами и учётом заработка. Поддерживает несколько профилей и оформление календаря под себя.",
     "badgeText": "Выбор разработчика",
+    "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.shiftplus",
     "releases": [
       {
         "version": "1.0.3",
