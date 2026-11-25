@@ -505,7 +505,7 @@
   margin-top: clamp(.8rem, 1.5vw, 1.4rem);
 }
 
-.catalog-history summary {
+:is(.catalog-history, .catalog-changelog) > summary {
   display: flex;
   align-items: center;
   gap: .55em;
@@ -520,11 +520,11 @@
   cursor: pointer;
 }
 
-.catalog-history summary::-webkit-details-marker {
+:is(.catalog-history, .catalog-changelog) > summary::-webkit-details-marker {
   display: none;
 }
 
-.catalog-history summary::after {
+:is(.catalog-history, .catalog-changelog) > summary::after {
   content: "";
   width: .34em;
   height: .34em;
@@ -534,14 +534,27 @@
   transform: rotate(45deg);
 }
 
-.catalog-history[open] summary::after {
+:is(.catalog-history, .catalog-changelog)[open] > summary::after {
   margin-top: .18em;
   transform: rotate(225deg);
 }
 
-.catalog-history summary:hover {
+:is(.catalog-history, .catalog-changelog) > summary:hover {
   color: var(--gold);
   border-color: var(--gold);
+}
+
+.catalog-changelog-content {
+  display: grid;
+  gap: 1rem;
+  max-width: 72ch;
+  margin-block-start: .8rem;
+}
+
+.catalog-changelog-content h3 {
+  margin-block-end: .35em;
+  font: inherit;
+  font-weight: 600;
 }
 
 .catalog-history-frame {

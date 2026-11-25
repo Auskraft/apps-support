@@ -68,6 +68,23 @@ function renderRelease(release) {
   return row;
 }
 
+function renderChangelog(details, sections) {
+  if (!sections?.length) {
+    details.remove();
+    return;
+  }
+
+  const content = details.querySelector(".catalog-changelog-content");
+  for (const { title, notes } of sections) {
+    const group = document.createElement("div");
+    const heading = document.createElement("h3");
+    heading.textContent = title;
+    group.append(heading);
+    renderReleaseNotes(group, notes);
+    content.append(group);
+  }
+}
+
 function renderApp(app) {
   const view = detailTemplate.content.firstElementChild.cloneNode(true);
   const availableReleases = app.releases.filter(release => release.apkUrl?.trim());
@@ -94,6 +111,7 @@ function renderApp(app) {
     view.querySelector(".catalog-download-note").remove();
     view.querySelector(".catalog-latest-number").textContent = current.version;
     renderReleaseNotes(view.querySelector(".catalog-release-notes"), current.notes);
+    renderChangelog(view.querySelector(".catalog-changelog"), current.changelog);
     history.querySelector("tbody").replaceChildren(...availableReleases.map(renderRelease));
   } else {
     download.remove();
