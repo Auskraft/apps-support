@@ -987,12 +987,7 @@ const catalogApps = [
       {
         "version": "1.8.3",
         "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/IUjnlcRKXOPesA"
-      },
-      {
-        "version": "1.8.2",
-        "notes": "Добавлены отдельные настройки управления в играх. Доступные варианты включают крестовину, джойстик, наклон и кнопки. Улучшен интерфейс.",
-        "apkUrl": "https://disk.yandex.ru/d/8fDkxw-BXz302g"
+        "apkUrl": "https://disk.yandex.ru/d/nJo2ETwZGmNRDQ"
       }
     ]
   },
