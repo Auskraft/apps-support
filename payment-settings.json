@@ -1,6 +1,6 @@
 {
     "brandLogo": "assets/brand/auskraft.png",
-    "activeProvider": "ozon",
+    "activeProvider": "godonate",
     "cloudtips": "https://pay.cloudtips.ru/p/a015b36e",
     "ozon": "https://finance.ozon.ru/apps/sbp/ozonbankpay/01a21c5b-00c4-7998-aeda-91f18773261e",
     "godonate": "https://godonate.ru/@auskraft",
