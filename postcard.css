@@ -207,6 +207,11 @@ body {
   border-radius: .45rem;
 }
 
+.payment-code[src="godonate-support-qr.png"] {
+  width: clamp(7.25rem, 12vw, 10rem);
+  padding: 0;
+}
+
 .goals,
 .transfer {
   border-top: 0;
@@ -365,5 +370,9 @@ body {
     width: 5.8rem;
     padding: .25rem;
     margin-top: .24rem;
+  }
+
+  .payment-code[src="godonate-support-qr.png"] {
+    width: clamp(6.25rem, 26vw, 7rem);
   }
 }
