@@ -207,7 +207,7 @@ body {
   border-radius: .45rem;
 }
 
-.payment-code[src="godonate-support-qr.png"] {
+.payment-code[src^="godonate-support-qr.png"] {
   width: clamp(7.25rem, 12vw, 10rem);
   padding: 0;
 }
@@ -372,7 +372,7 @@ body {
     margin-top: .24rem;
   }
 
-  .payment-code[src="godonate-support-qr.png"] {
+  .payment-code[src^="godonate-support-qr.png"] {
     width: clamp(6.25rem, 26vw, 7rem);
   }
 }
