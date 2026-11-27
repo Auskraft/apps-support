@@ -1,0 +1,369 @@
+:root {
+  color-scheme: light;
+  --ink: #103638;
+  --ink-muted: #574b40;
+  --gold: #a33719;
+  --gold-bright: #812d18;
+  --line: #d4bda1;
+  --bg: #faecdb;
+  --bg-deep: #f1e0c9;
+  --surface: #fff7e9;
+  --surface-raised: #fffaf0;
+  --serif: Georgia, "Times New Roman", serif;
+  --paper-grain: url("assets/postcard/paper.png");
+  --airmail: url("assets/postcard/airmail.png");
+  --button-ink: #fff8e9;
+}
+
+body {
+  background: var(--bg) var(--paper-grain) repeat;
+  color: var(--ink);
+}
+
+.site-header {
+  min-height: clamp(4.25rem, 5.9vw, 5.4rem);
+  background: linear-gradient(#fff9ed7a, #fff9ed7a);
+}
+
+.brand-mark-logo {
+  width: clamp(2.2rem, 3.65vw, 3.35rem);
+  height: clamp(2.2rem, 3.65vw, 3.35rem);
+  border: 0;
+  background: transparent url("logo.png?v=arabesque") center / contain no-repeat;
+}
+
+.brand strong {
+  color: var(--ink);
+  font: 700 clamp(1.4rem, 2.45vw, 2.15rem)/1 var(--serif);
+  letter-spacing: -.04em;
+}
+
+.brand small {
+  color: var(--ink-muted);
+  border-color: var(--line);
+}
+
+.site-header nav a {
+  min-height: 2.75rem;
+  font-weight: 580;
+}
+
+.skip-link,
+.support-button {
+  color: var(--button-ink);
+  background: var(--gold);
+}
+
+.support-button {
+  border: 1px solid transparent;
+  border-radius: .6rem;
+  box-shadow: inset 0 1px #fff2d12b;
+  text-wrap: balance;
+}
+
+.support-button:hover {
+  background: var(--gold-bright);
+}
+
+.payment-link {
+  text-underline-offset: .22em;
+  font-weight: 650;
+}
+
+.site-footer {
+  background: linear-gradient(#d8b98c36, #d8b98c36), var(--paper-grain), var(--bg-deep);
+  border-top: 1px solid var(--line);
+}
+
+/* The existing intro and support sections occupy separate rows of the same opening. */
+.opening {
+  --postcard-inset: clamp(.55rem, 1.15vw, 1rem);
+  --postcard-bottom: calc(var(--postcard-inset) + .65rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: min(calc(100% - 2 * var(--postcard-inset)), 96rem);
+  margin: clamp(.9rem, 2.1vw, 1.8rem) auto 0;
+  overflow: visible;
+}
+
+.opening-content {
+  display: contents;
+}
+
+.opening::before,
+.goals-grid figure {
+  --stamp-notch: 4px;
+  --stamp-step: 16px;
+  mask:
+    radial-gradient(circle at 50% 0, transparent var(--stamp-notch), #000 calc(var(--stamp-notch) + .65px)) top / var(--stamp-step) 100% repeat-x,
+    radial-gradient(circle at 50% 100%, transparent var(--stamp-notch), #000 calc(var(--stamp-notch) + .65px)) bottom / var(--stamp-step) 100% repeat-x,
+    radial-gradient(circle at 0 50%, transparent var(--stamp-notch), #000 calc(var(--stamp-notch) + .65px)) left / 100% var(--stamp-step) repeat-y,
+    radial-gradient(circle at 100% 50%, transparent var(--stamp-notch), #000 calc(var(--stamp-notch) + .65px)) right / 100% var(--stamp-step) repeat-y;
+  mask-composite: intersect;
+}
+
+.opening::before {
+  content: "";
+  grid-area: 1 / 1;
+  z-index: -2;
+  background: linear-gradient(#fff5df6b, #fff5df6b), var(--paper-grain), var(--bg);
+  box-shadow: inset 0 0 0 1px #c3a37a, inset 0 0 7px 3px #d5b591a6;
+}
+
+.opening::after {
+  content: "";
+  grid-area: 1 / 1;
+  align-self: end;
+  z-index: -1;
+  height: .6rem;
+  margin: 0 var(--postcard-inset) var(--postcard-inset);
+  background: var(--airmail) left center / 6rem 100% repeat-x;
+  mix-blend-mode: multiply;
+}
+
+.opening .hero-art {
+  grid-area: 1 / 1;
+  position: relative;
+  inset: auto;
+  align-self: stretch;
+  width: calc(100% - 2 * var(--postcard-inset));
+  height: calc(100% - var(--postcard-inset) - var(--postcard-bottom));
+  min-height: 0;
+  margin: var(--postcard-inset) auto var(--postcard-bottom);
+  object-fit: cover;
+  object-position: 52% center;
+  mask: none;
+}
+
+.hero-motion {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  pointer-events: none;
+}
+
+.hero-motion[hidden] {
+  display: none;
+}
+
+.opening .intro {
+  position: relative;
+  isolation: isolate;
+  grid-area: 1 / 1;
+  width: min(62.5%, 52.5rem);
+  max-width: none;
+  min-height: clamp(29rem, 43vw, 39rem);
+  padding: clamp(2.4rem, 4.1vw, 4.4rem) 1rem 11rem clamp(1.7rem, 4.35vw, 4.65rem);
+}
+
+.intro h1 {
+  max-width: 13.2em;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -.045em;
+  line-height: .99;
+  text-wrap: wrap;
+}
+
+.intro p {
+  max-width: 37rem;
+  margin-top: clamp(1rem, 1.6vw, 1.45rem);
+  font-size: clamp(1rem, .8rem + .42vw, 1.24rem);
+}
+
+.intro .support-button {
+  margin-top: clamp(1.2rem, 2.2vw, 2rem);
+  padding: .85rem 1.55rem;
+  font-size: clamp(1rem, 1.4vw, 1.28rem);
+  font-weight: 700;
+}
+
+.opening .support {
+  grid-area: 2 / 1;
+  width: min(calc(100% - 2 * var(--gutter) + 2 * var(--postcard-inset)), var(--page));
+  max-width: none;
+  justify-self: center;
+  gap: .9rem clamp(1.25rem, 4vw, 3.4rem);
+  margin: 0;
+  padding-block: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+.opening .support-copy {
+  flex: 1 1 min(21rem, 60%);
+  max-width: 31rem;
+}
+
+.support h2,
+.goals h2,
+.transfer h2 {
+  font-size: clamp(1.65rem, 2.8vw, 2.65rem);
+  font-weight: 700;
+}
+
+.payment-code {
+  width: clamp(6.25rem, 10vw, 8.75rem);
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: .45rem;
+}
+
+.goals,
+.transfer {
+  border-top: 0;
+  padding-top: clamp(.9rem, 2.3vw, 2rem);
+}
+
+.goals-grid figure {
+  --stamp-notch: 3px;
+  --stamp-step: 12px;
+  padding: .5rem .5rem 0;
+  border: 1px solid #c9a980;
+  border-radius: 0;
+  background: linear-gradient(#fff8e9ba, #fff8e9ba), var(--paper-grain), var(--bg);
+  box-shadow: inset 0 0 6px #b88b5240;
+}
+
+.goals-grid img {
+  border: 1px solid #ad835550;
+}
+
+.goals-grid figcaption {
+  position: static;
+  padding: .8rem .55rem .95rem;
+  background: none;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.transfer-grid strong {
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-motion {
+    display: none;
+  }
+}
+
+.legal-page {
+  --dark: var(--ink);
+  --dark-muted: var(--ink-muted);
+  --line-dark: var(--line);
+  background: var(--bg) var(--paper-grain) repeat;
+}
+
+.legal-page .site-header {
+  background: none;
+}
+
+.legal-lead,
+.legal-document .details-card {
+  border: 1px solid var(--line);
+  border-radius: .7rem;
+  background: var(--surface);
+}
+
+.legal-page :is(.legal-number, .legal-document section a, .legal-nav a:hover) {
+  color: var(--gold);
+}
+
+.legal-page a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+@media (min-width: 761px) and (max-width: 1120px) {
+  .opening .hero-art {
+    object-position: 69% center;
+  }
+
+  .opening .intro {
+    width: 55%;
+  }
+
+  .opening .intro::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: var(--postcard-inset) -2.5rem 4.75rem var(--postcard-inset);
+    background: linear-gradient(100deg, #fff1d8d1 28%, #fff1d895 63%, transparent 92%);
+    mask-image: linear-gradient(black 62%, transparent);
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header nav {
+    flex-wrap: wrap;
+    column-gap: clamp(.7rem, 3vw, 1.45rem);
+    row-gap: 0;
+    padding-block: .2rem;
+  }
+
+  .site-header nav a {
+    min-height: 2.25rem;
+    font-size: .88rem;
+  }
+
+  .opening::before {
+    grid-row: 1 / 3;
+  }
+
+  .opening::after,
+  .opening .hero-art {
+    grid-row: 2;
+  }
+
+  .opening::after {
+    background-size: 3.8rem 100%;
+  }
+
+  .opening .hero-art {
+    height: auto;
+    aspect-ratio: 2.2;
+    margin-block-start: 0;
+    object-position: right center;
+    mask-image: linear-gradient(to bottom, transparent, #000 19%);
+  }
+
+  .hero-motion {
+    mask-image: linear-gradient(to bottom, transparent, #000 19%);
+  }
+
+  .opening .intro {
+    width: auto;
+    min-height: auto;
+    padding: 1.5rem clamp(1.4rem, 5.3vw, 2.45rem) 1.4rem;
+  }
+
+  .intro h1 {
+    font-size: clamp(2.06rem, 6.7vw, 3.45rem);
+  }
+
+  .intro .support-button {
+    margin-top: 1.15rem;
+  }
+
+  .opening .support {
+    grid-row: 3;
+    padding-inline: .25rem;
+  }
+}
+
+@media (max-width: 435px) {
+  .opening .support {
+    align-items: start;
+    flex-wrap: nowrap;
+  }
+
+  .opening .support-copy {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .payment-code {
+    flex: 0 0 auto;
+    width: 5.8rem;
+    padding: .25rem;
+    margin-top: .24rem;
+  }
+}
