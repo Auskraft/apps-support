@@ -1,0 +1,43 @@
+content:
+  - name: payment
+    label: Поддержка по карте
+    type: file
+    path: payment-settings.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: activeProvider
+        label: Куда ведёт кнопка поддержки
+        type: select
+        required: true
+        description: Заполните ссылку выбранного сервиса ниже и сохраните изменения.
+        options:
+          values:
+            - name: cloudtips
+              label: CloudTips
+            - name: robokassa
+              label: Робокасса
+            - name: yookassa
+              label: ЮKassa
+      - name: cloudtips
+        label: Ссылка CloudTips
+        type: string
+        description: Публичная ссылка на вашу страницу поддержки.
+        pattern:
+          regex: '^(?:https://pay\.cloudtips\.ru/[^/?#\s\\][^\s\\]*)?$'
+          message: Вставьте полную ссылку на страницу поддержки с домена pay.cloudtips.ru.
+      - name: robokassa
+        label: Ссылка Робокассы
+        type: string
+        description: Многоразовая ссылка из личного кабинета магазина.
+        pattern:
+          regex: '^(?:https://(?:auth\.robokassa\.ru|robo\.market)/[^/?#\s\\][^\s\\]*)?$'
+          message: Введите платёжную ссылку HTTPS с домена auth.robokassa.ru или robo.market.
+      - name: yookassa
+        label: Ссылка ЮKassa
+        type: string
+        description: Ссылка на многоразовый счёт из личного кабинета магазина.
+        pattern:
+          regex: '^(?:https://(?:yookassa\.ru|yoomoney\.ru)/[^/?#\s\\][^\s\\]*)?$'
+          message: Введите платёжную ссылку HTTPS с домена yookassa.ru или yoomoney.ru.
