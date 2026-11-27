@@ -6,6 +6,59 @@ media:
     extensions: [png]
 
 content:
+  - name: supportSite
+    label: Адрес страницы поддержки
+    type: file
+    path: support-site.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: activeSite
+        label: Куда открывается страница из мобильных приложений
+        type: select
+        required: true
+        options:
+          values:
+            - name: sprinthost
+              label: auskraft.ru
+            - name: github
+              label: GitHub Pages
+
+  - name: mobileUpdates
+    label: Баннеры обновления приложений
+    type: collection
+    path: mobile/updates
+    format: json
+    operations:
+      create: false
+      rename: false
+      delete: false
+    fields:
+      - name: schemaVersion
+        label: Версия формата
+        type: number
+        readonly: true
+      - name: appId
+        label: Идентификатор приложения
+        type: string
+        readonly: true
+      - name: enabled
+        label: Показывать баннер
+        description: Включайте после появления новой версии в RuStore.
+        type: boolean
+      - name: latestVersionCode
+        label: Код версии в RuStore
+        type: number
+        required: true
+        options:
+          min: 1
+          max: 2100000000
+      - name: ruStoreUrl
+        label: Страница приложения в RuStore
+        type: string
+        readonly: true
+
   - name: payment
     label: Поддержка по карте
     type: file
