@@ -1,12 +1,22 @@
 const paymentLinks = new Map([
   ["cloudtips", /^https:\/\/pay\.cloudtips\.ru\/[^/?#\s\\][^\s\\]*$/],
+  ["ozon", /^https:\/\/finance\.ozon\.ru\/apps\/sbp\/ozonbankpay\/[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i],
   ["robokassa", /^https:\/\/(?:auth\.robokassa\.ru|robo\.market)\/[^/?#\s\\][^\s\\]*$/],
   ["yookassa", /^https:\/\/(?:yookassa\.ru|yoomoney\.ru)\/[^/?#\s\\][^\s\\]*$/],
 ]);
 
-async function openPayment() {
-  const status = document.getElementById("payment-status");
-  status.textContent = "Открываем платёжную страницу…";
+const paymentCodes = new Map([
+  ["https://pay.cloudtips.ru/p/a015b36e", {
+    src: "cloudtips-support-qr.png",
+    alt: "QR-код для добровольного перевода через CloudTips",
+  }],
+  ["https://finance.ozon.ru/apps/sbp/ozonbankpay/01a21c5b-00c4-7998-aeda-91f18773261e", {
+    src: "ozon-support-qr.png",
+    alt: "QR-код для добровольного перевода через Ozon Банк",
+  }],
+]);
+
+async function getPaymentDestination() {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 8000);
   try {
@@ -20,13 +30,43 @@ async function openPayment() {
     if (typeof destination !== "string" || !paymentLinks.get(provider)?.test(destination)) {
       throw new Error("Invalid payment URL");
     }
-    window.location.replace(destination);
-  } catch {
-    status.textContent = "Не удалось открыть платёжную страницу. Попробуйте ещё раз чуть позже.";
-    document.getElementById("payment-retry").hidden = false;
+    return destination;
   } finally {
     clearTimeout(timeout);
   }
 }
 
-openPayment();
+async function openPayment(status) {
+  status.textContent = "Открываем платёжную страницу…";
+  try {
+    window.location.replace(await getPaymentDestination());
+  } catch {
+    status.textContent = "Не удалось открыть платёжную страницу. Попробуйте ещё раз чуть позже.";
+    document.getElementById("payment-retry").hidden = false;
+  }
+}
+
+async function showPaymentCode(image) {
+  image.hidden = true;
+  try {
+    const code = paymentCodes.get(await getPaymentDestination());
+    if (!code) return;
+    image.src = code.src;
+    image.alt = code.alt;
+    await image.decode();
+    image.hidden = false;
+  } catch {
+    // The payment link remains available when a matching QR cannot be loaded.
+  }
+}
+
+const paymentStatus = document.getElementById("payment-status");
+if (paymentStatus) openPayment(paymentStatus);
+
+const paymentCode = document.getElementById("payment-code");
+if (paymentCode) {
+  showPaymentCode(paymentCode);
+  window.addEventListener("pageshow", event => {
+    if (event.persisted) showPaymentCode(paymentCode);
+  });
+}

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="emerald.css?v=arabesque">
   <link rel="stylesheet" href="postcard.css">
   <script src="postcard-motion.js" defer></script>
+  <script src="payment.js?v=provider-qr" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">К содержанию</a>
@@ -41,7 +42,7 @@
             <p>Если мои приложения вам пригодились, вы можете поддержать меня и мою семью.</p>
             <a class="payment-link" href="payment.html" target="_blank" rel="noopener noreferrer">Перейти к оплате <span aria-hidden="true">↗</span></a>
           </div>
-          <img class="payment-code" src="cloudtips-support-qr.png" alt="QR-код для добровольного перевода через CloudTips" width="820" height="820">
+          <img class="payment-code" id="payment-code" alt="" width="820" height="820" hidden>
         </section>
       </div>
     </div>
