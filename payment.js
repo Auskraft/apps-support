@@ -24,7 +24,9 @@ async function getPaymentDestination() {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 8000);
   try {
-    const settingsUrl = new URL("payment-settings.json", document.baseURI);
+    const publicSite = location.hostname === "auskraft.ru" || location.hostname === "www.auskraft.ru";
+    const settingsBase = publicSite ? "https://auskraft.github.io/apps-support/" : document.baseURI;
+    const settingsUrl = new URL("payment-settings.json", settingsBase);
     settingsUrl.searchParams.set("v", Date.now().toString());
     const response = await fetch(settingsUrl, { cache: "no-store", signal: controller.signal });
     if (!response.ok) throw new Error("Settings unavailable");
