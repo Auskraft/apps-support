@@ -229,24 +229,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.shiftplus",
     "releases": [
       {
-        "version": "1.0.3",
-        "notes": "В каталог добавлены 97 текстурных тем «Танькины». Обновлены варианты расчёта, ведомость и сетка выбора тем.",
-        "apkUrl": "https://disk.yandex.ru/d/meaZ5sMfkN8bpg"
-      },
-      {
-        "version": "1.0.2",
-        "notes": "Возвращён компактный обзор года из 12 месяцев. Квадратные ячейки месяца показывают выбранные отметки без обрезания.",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.1",
-        "notes": "Обновлены поля сокращения смен и палитра. Для новой установки предусмотрены компактная ведомость и оформление «Шалфейная арабеска».",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первый выпуск под названием «График смен PRO». Обновлены документы и экран ознакомления при первом запуске.",
-        "apkUrl": null
+        "version": "1.0.5",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/0EdRA2WC2ImpFw"
       }
     ]
   },
@@ -260,29 +245,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.rotating_shift_pvz",
     "releases": [
       {
-        "version": "1.0.4",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/A5O45UpIV5RL1w"
-      },
-      {
-        "version": "1.0.3",
-        "notes": "На экране сотрудника упрощён заголовок и уточнено отображение даты следующей рабочей смены.",
-        "apkUrl": "https://disk.yandex.ru/d/n0LySnfHUUmv9w"
-      },
-      {
-        "version": "1.0.2",
-        "notes": "Добавлена диаграмма Ганта по сотрудникам с индивидуальными цветами и выбор разных вариантов нижней панели.",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.1",
-        "notes": "Обновлены главные экраны и календарь. Добавлены прогноз дохода, переключение роли и чек-лист на главной.",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первая сборка с отдельными режимами для руководителя и сотрудника, графиками смен, темами и резервным копированием.",
-        "apkUrl": null
+        "version": "1.0.5",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/26aM_g31NIPaXA"
       }
     ]
   },
@@ -298,49 +263,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/dev.auskraft.zametka",
     "releases": [
       {
-        "version": "11.1.3",
-        "notes": "Добавление покупок стало компактнее. Количество выбирается на барабане, купленные позиции зачёркиваются. Добавлена настройка размытия стекла с предпросмотром.",
-        "apkUrl": "https://disk.yandex.ru/d/ZiOInq-5wBCwxw"
-      },
-      {
-        "version": "11.1.2",
-        "notes": "Добавлен отдельный список покупок с каталогом товаров и шаблонами. Пункты обычного чек-листа отмечаются прямо при чтении.",
-        "apkUrl": null
-      },
-      {
-        "version": "10.1.0",
-        "notes": "Обновлены палитра тегов и действия с ними. Улучшены переходы из архива и недавних заметок.",
-        "apkUrl": null
-      },
-      {
-        "version": "10.0.0",
-        "notes": "Добавлены поиск и замена в заметке, шаблоны, подзадачи и цветные теги. Появились сканирование документов, запись аудио и распознавание текста.",
-        "apkUrl": null
-      },
-      {
-        "version": "2.1.0",
-        "notes": "Появились избранное для заметок, папок и экранов, общий поиск с подсветкой и массовые действия в корзине. Обновлены дерево папок и контекстные меню.",
-        "apkUrl": null
-      },
-      {
-        "version": "2.0.3",
-        "notes": "Закладки доступны из списков заметок и папок. При возвращении из закладок сохраняются поиск, выбранная папка и позиция прокрутки.",
-        "apkUrl": null
-      },
-      {
-        "version": "2.0.2",
-        "notes": "Готовые заметки открываются в режиме чтения с сохранением позиции. Нажатие на закладку переносит к отмеченному фрагменту.",
-        "apkUrl": null
-      },
-      {
-        "version": "2.0.1",
-        "notes": "Исправлено преждевременное сообщение об ошибке резервного копирования. После потери ответа Яндекс Диска приложение проверяет, сохранился ли архив.",
-        "apkUrl": null
-      },
-      {
-        "version": "2.0.0",
-        "notes": "Исправлен ввод в таблицах. Добавлены запоминание места чтения, цветные закладки, свои шрифты, регулируемые поля и полноэкранный просмотр изображений.",
-        "apkUrl": null
+        "version": "11.1.5",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/PQhT_UQtzfOwaw"
       }
     ]
   },
@@ -354,19 +279,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.calendar",
     "releases": [
       {
-        "version": "1.0.2",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/ikuN7W6wjWrNIQ"
-      },
-      {
-        "version": "1.0.1",
-        "notes": "Добавлен экран добровольной поддержки и исправлено название календаря.",
-        "apkUrl": "https://disk.yandex.ru/d/d19_5gR2S0S3Iw"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первая версия",
-        "apkUrl": null
+        "version": "1.0.3",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/4Wkfo_rO6ZMekw"
       }
     ]
   },
@@ -380,19 +295,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.wird",
     "releases": [
       {
-        "version": "1.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/Vtyyeey4bKRCnw"
-      },
-      {
-        "version": "1.1.0",
-        "notes": "Добавлена возможность добровольно поддержать разработчика.",
-        "apkUrl": "https://disk.yandex.ru/d/sl3EwcGp1BrXyQ"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первая версия",
-        "apkUrl": null
+        "version": "1.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/675RzpiwLkgxwg"
       }
     ]
   },
@@ -406,19 +311,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.dua",
     "releases": [
       {
-        "version": "1.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/iQ1W82CMR67P6Q"
-      },
-      {
-        "version": "1.1.0",
-        "notes": "Добавлен экран добровольной поддержки, доступный с главной и из настроек.",
-        "apkUrl": "https://disk.yandex.ru/d/wGGF9PMGG49ECw"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первая версия",
-        "apkUrl": null
+        "version": "1.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/I76tNlz4t4jB-A"
       }
     ]
   },
@@ -432,14 +327,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.zakat",
     "releases": [
       {
-        "version": "0.1.3",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/75BtiApP1sFWnw"
-      },
-      {
-        "version": "0.1.2",
-        "notes": "Добавлен экран добровольной поддержки, доступный с главной и из справки.",
-        "apkUrl": "https://disk.yandex.ru/d/vSfFYIXPW6Yieg"
+        "version": "0.1.4",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/OUmn40kW8ubSYA"
       }
     ]
   },
@@ -453,19 +343,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.kada",
     "releases": [
       {
-        "version": "1.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/1dMGAyQgSnoezQ"
-      },
-      {
-        "version": "1.1.0",
-        "notes": "Добавлен экран добровольной поддержки, доступный из карточки «Када» и настроек.",
-        "apkUrl": "https://disk.yandex.ru/d/7XjLUlIGvpYqBw"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первая версия",
-        "apkUrl": null
+        "version": "1.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/e3J2REZc4_pMrQ"
       }
     ]
   },
@@ -609,19 +489,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.hifz",
     "releases": [
       {
-        "version": "1.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/JLimTAER0jP3jw"
-      },
-      {
-        "version": "1.1.0",
-        "notes": "Добавлен экран добровольной поддержки, доступный с главной и из настроек.",
-        "apkUrl": "https://disk.yandex.ru/d/cwaoF1ty3Eh4BA"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первая версия",
-        "apkUrl": null
+        "version": "1.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/RJfJ2LDHrBizhg"
       }
     ]
   },
