@@ -1,7 +1,7 @@
 const paymentLinks = new Map([
   ["cloudtips", /^https:\/\/pay\.cloudtips\.ru\/[^/?#\s\\][^\s\\]*$/],
   ["ozon", /^https:\/\/finance\.ozon\.ru\/apps\/sbp\/ozonbankpay\/[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i],
-  ["robokassa", /^https:\/\/(?:auth\.robokassa\.ru|robo\.market)\/[^/?#\s\\][^\s\\]*$/],
+  ["godonate", /^https:\/\/godonate\.ru\/@[A-Za-z0-9_-]+$/],
   ["yookassa", /^https:\/\/(?:yookassa\.ru|yoomoney\.ru)\/[^/?#\s\\][^\s\\]*$/],
 ]);
 
@@ -13,6 +13,10 @@ const paymentCodes = new Map([
   ["https://finance.ozon.ru/apps/sbp/ozonbankpay/01a21c5b-00c4-7998-aeda-91f18773261e", {
     src: "ozon-support-qr.png",
     alt: "QR-код для добровольного перевода через Ozon Банк",
+  }],
+  ["https://godonate.ru/@auskraft", {
+    src: "godonate-support-qr.png",
+    alt: "QR-код для добровольного перевода через GoDonate",
   }],
 ]);
 
