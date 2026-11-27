@@ -29,34 +29,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.injection_diary",
     "releases": [
       {
-        "version": "10.1.3",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/gBnIpuCRlFN4cw"
-      },
-      {
-        "version": "10.1.2",
-        "notes": "Исправлено восстановление авторизации Яндекс Диска после переустановки.",
-        "apkUrl": "https://disk.yandex.ru/d/OEHyPb57Cy2YxQ"
-      },
-      {
-        "version": "10.1.1",
-        "notes": "В календаре отображаются места сделанных инъекций.",
-        "apkUrl": null
-      },
-      {
-        "version": "10.1.0",
-        "notes": "Появилась отметка инъекций прямо из уведомления. Можно отложить напоминание и задать интервал повторов для каждого профиля.",
-        "apkUrl": null
-      },
-      {
-        "version": "10.0.0",
-        "notes": "Добавлены отдельные записи веса и объёмов тела с редактированием и графиками.",
-        "apkUrl": null
-      },
-      {
-        "version": "4.8.8",
-        "notes": "- Если отметить приём или укол раньше запланированного времени, уведомление за уже выполненный слот больше не появляется.\n- Следующие напоминания продолжают работать по расписанию.\n- Улучшена надёжность уведомлений для дополнительных профилей.",
-        "apkUrl": null
+        "version": "10.1.4",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/DahKxP_MdS-UcQ"
       }
     ]
   },
@@ -70,39 +45,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.tabletki",
     "releases": [
       {
-        "version": "8.3.2",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/Hb2EnkaYSJdYqQ"
-      },
-      {
-        "version": "8.3.1",
-        "notes": "Теперь название препарата, добавленного вручную, можно исправить прямо в форме редактирования. Измените название и нажмите «Сохранить». Расписание и история приёмов сохранятся.",
-        "apkUrl": "https://disk.yandex.ru/d/gnhTtn75a4D0QQ"
-      },
-      {
-        "version": "8.3.0",
-        "notes": "Приём можно отметить прямо в развёрнутом уведомлении. Для нескольких лекарств есть кнопка «Принял всё». Напоминание можно отложить, а интервал повторов задать от 5 до 90 минут.",
-        "apkUrl": "https://disk.yandex.ru/d/oTWY45lE2fbmeg"
-      },
-      {
-        "version": "8.2.0",
-        "notes": "Длительность курса теперь можно задать в днях, неделях и месяцах. Приложение рассчитает дату окончания и количество препарата по расписанию.",
-        "apkUrl": null
-      },
-      {
-        "version": "8.1.0",
-        "notes": "Добавлены необязательный учёт запаса лекарств, напоминания о пополнении и единое оформление формы препарата.",
-        "apkUrl": null
-      },
-      {
-        "version": "8.0.0",
-        "notes": "В настройках появился выбор размера текста приложения по системным настройкам Android.",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Выпущено отдельное приложение с расписаниями лекарств, напоминаниями, виджетами и совместимым форматом резервных копий.",
-        "apkUrl": null
+        "version": "8.3.3",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/rv9PtncHuLzNZQ"
       }
     ]
   },
@@ -117,54 +62,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.tablitnica",
     "releases": [
       {
-        "version": "8.3.2",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/thahkRAzLtbqnQ"
-      },
-      {
-        "version": "8.3.1",
-        "notes": "Теперь название препарата, добавленного вручную, можно исправить прямо в форме редактирования. Измените название и нажмите «Сохранить». Расписание и история приёмов сохранятся.",
-        "apkUrl": "https://disk.yandex.ru/d/aIktXahwjejoLw"
-      },
-      {
-        "version": "8.3.0",
-        "notes": "Приём можно отметить прямо в развёрнутом уведомлении. Для нескольких лекарств есть кнопка «Принял всё». Напоминание можно отложить, а интервал повторов задать от 5 до 90 минут.",
-        "apkUrl": "https://disk.yandex.ru/d/HK2kAmzubnpiiQ"
-      },
-      {
-        "version": "8.2.0",
-        "notes": "Длительность курса теперь можно задать в днях, неделях и месяцах. Приложение рассчитает дату окончания и количество препарата по расписанию.",
-        "apkUrl": null
-      },
-      {
-        "version": "8.1.0",
-        "notes": "Добавлены необязательный учёт запаса лекарств, напоминания о пополнении и единое оформление формы препарата.",
-        "apkUrl": null
-      },
-      {
-        "version": "7.2.4",
-        "notes": "Добавлены компактные виджеты 2×2 с ближайшим приёмом, названиями препаратов и прогрессом дня.",
-        "apkUrl": null
-      },
-      {
-        "version": "7.1.1",
-        "notes": "Интервал повторных напоминаний можно выбрать отдельно для каждого профиля — от 5 до 90 минут. Повторы прекращаются после отметки «Принял» или «Пропустил».",
-        "apkUrl": null
-      },
-      {
-        "version": "7.0.0",
-        "notes": "Обновлена доставка напоминаний на Tecno, Infinix и itel. Добавлены проверка доступа к точным будильникам и восстановление расписания после быстрой перезагрузки.",
-        "apkUrl": null
-      },
-      {
-        "version": "6.1.3",
-        "notes": "Расширен отчёт для врача в PDF. Он показывает текущие и завершённые курсы, сводку приёма за 30 дней и подробный журнал за неделю.",
-        "apkUrl": null
-      },
-      {
-        "version": "6.0.0",
-        "notes": "Для препаратов можно указать описание и выбрать цвет значка. Точные часы и периоды суток теперь учитываются вместе в расписании.",
-        "apkUrl": null
+        "version": "8.3.3",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/4wG9A2GOMf2E4w"
       }
     ]
   },
@@ -375,19 +275,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.namaz",
     "releases": [
       {
-        "version": "1.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/OXqN6hv_op3_SA"
-      },
-      {
-        "version": "1.1",
-        "notes": "Добавлен экран добровольной поддержки. Приложение называется «Салят (Намаз)».",
-        "apkUrl": "https://disk.yandex.ru/d/tOFwv7vTzGNa7g"
-      },
-      {
-        "version": "1.0",
-        "notes": "Первая версия",
-        "apkUrl": null
+        "version": "1.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/tZsT_bpvoYMqqg"
       }
     ]
   },
@@ -467,39 +357,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/ru.auskraft.pet_diary",
     "releases": [
       {
-        "version": "1.0.6",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/VNZhE0c0VZ7zGg"
-      },
-      {
-        "version": "1.0.5",
-        "notes": "Обновлено окно оценки приложения. Оно открывается в компактной панели и не мешает вводу, документам или действиям по напоминаниям.",
-        "apkUrl": "https://disk.yandex.ru/d/-wbocrivKKXUlA"
-      },
-      {
-        "version": "1.0.4",
-        "notes": "Обновлены анкета питомца и отчёты, добавлены быстрые правки полей, новые варианты окраса и полный список вакцин из справочника.",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.3",
-        "notes": "Улучшены повседневные сценарии дневника, добавлен виджет дня рождения, исправлена одновременная запись данных.",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.2",
-        "notes": "Исправлены вёрстка первого запуска, ввод в поля и случайный выход из приложения.",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.1",
-        "notes": "Исправлены настройки оформления, работа экрана согласия и удаление питомца.",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первый выпуск с паспортом питомца, учётом препаратов и резервным копированием.",
-        "apkUrl": null
+        "version": "1.0.7",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/z7_cZi_WOh4GoA"
       }
     ]
   },
@@ -660,9 +520,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.natsukashi_yoru",
     "releases": [
       {
-        "version": "1.8.3",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/nJo2ETwZGmNRDQ"
+        "version": "1.8.4",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/hOSzWNwei0aZ6g"
       }
     ]
   },
@@ -676,14 +536,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.natsukashi_tanks",
     "releases": [
       {
-        "version": "1.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/1kJQ_pcFW-B4Ig"
-      },
-      {
-        "version": "1.1.0",
-        "notes": "Добавлены музыка и звуковые эффекты с настройкой громкости. Вражеские танки появляются с разных сторон.",
-        "apkUrl": "https://disk.yandex.ru/d/SMmDZ2jWxRnUQw"
+        "version": "1.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/6-Oy6d4BBuM7fg"
       }
     ]
   },
@@ -699,14 +554,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chisana_kodomo",
     "releases": [
       {
-        "version": "1.9.10",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/WqYS9KE-gzHRMw"
-      },
-      {
-        "version": "1.9.9",
-        "notes": "Улучшено воспроизведение голосовых подсказок и обработка нажатий в игре со звуками животных.",
-        "apkUrl": "https://disk.yandex.ru/d/1yzES3C2E7AtNw"
+        "version": "1.9.11",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/DJ5IaOZoug5lbw"
       }
     ]
   }
