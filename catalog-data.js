@@ -13,6 +13,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.blood_pressure_diary",
     "releases": [
       {
+        "version": "14.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/dc-bz4kzpYO29A"
+      },
+      {
         "version": "14.1.0",
         "notes": "В уведомлениях о лекарствах появились быстрые отметки «Принял» и «Отложить». Интервал откладывания и повторов настраивается отдельно для каждого профиля.",
         "apkUrl": "https://disk.yandex.ru/d/pMz0ay2pILEkqQ"
@@ -33,6 +38,11 @@ const catalogApps = [
     "description": "Дневник инъекций GLP-1 с учётом доз, напоминаниями, историей веса и замерами тела.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.injection_diary",
     "releases": [
+      {
+        "version": "10.1.3",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/gBnIpuCRlFN4cw"
+      },
       {
         "version": "10.1.2",
         "notes": "Исправлено восстановление авторизации Яндекс Диска после переустановки.",
@@ -69,6 +79,11 @@ const catalogApps = [
     "description": "Напоминания о лекарствах для себя и близких. Приложение хранит расписания и историю приёма по отдельным профилям.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.tabletki",
     "releases": [
+      {
+        "version": "8.3.2",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/Hb2EnkaYSJdYqQ"
+      },
       {
         "version": "8.3.1",
         "notes": "Теперь название препарата, добавленного вручную, можно исправить прямо в форме редактирования. Измените название и нажмите «Сохранить». Расписание и история приёмов сохранятся.",
@@ -111,6 +126,11 @@ const catalogApps = [
     "description": "Напоминания о приёме лекарств с гибким расписанием, историей, виджетами и отдельными профилями для близких.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.tablitnica",
     "releases": [
+      {
+        "version": "8.3.2",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/thahkRAzLtbqnQ"
+      },
       {
         "version": "8.3.1",
         "notes": "Теперь название препарата, добавленного вручную, можно исправить прямо в форме редактирования. Измените название и нажмите «Сохранить». Расписание и история приёмов сохранятся.",
@@ -184,6 +204,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.work_shift_calendar",
     "releases": [
       {
+        "version": "31.0.2",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/bHc0dnfsculHlw"
+      },
+      {
         "version": "31.0.1",
         "notes": "Сегодняшний день выделен рамкой в обоих месячных виджетах. Цвета виджетов согласованы с темой, на стеклянной подложке улучшена читаемость.",
         "apkUrl": "https://disk.yandex.ru/d/GQSCzh45TuBPsg"
@@ -240,6 +265,11 @@ const catalogApps = [
     "description": "Календарь для сменной работы и вахты. Поддерживает повторяющиеся циклы, свой порядок смен, ручные отметки, отпуск и несколько профилей.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.rotating_shift",
     "releases": [
+      {
+        "version": "31.0.2",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/olf35DQ921U41Q"
+      },
       {
         "version": "31.0.1",
         "notes": "Сегодняшний день выделен рамкой в обоих месячных виджетах. Цвета виджетов согласованы с темой, на стеклянной подложке улучшена читаемость.",
@@ -324,6 +354,11 @@ const catalogApps = [
     "description": "График для сотрудников и руководителей ПВЗ. Помогает планировать смены, видеть расписание команды и рассчитывать ожидаемый доход.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.rotating_shift_pvz",
     "releases": [
+      {
+        "version": "1.0.4",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/A5O45UpIV5RL1w"
+      },
       {
         "version": "1.0.3",
         "notes": "На экране сотрудника упрощён заголовок и уточнено отображение даты следующей рабочей смены.",
@@ -435,6 +470,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.wird",
     "releases": [
       {
+        "version": "1.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/Vtyyeey4bKRCnw"
+      },
+      {
         "version": "1.1.0",
         "notes": "Добавлена возможность добровольно поддержать разработчика.",
         "apkUrl": "https://disk.yandex.ru/d/sl3EwcGp1BrXyQ"
@@ -455,6 +495,11 @@ const catalogApps = [
     "description": "Ежедневные дуа с переводом смысла, источниками и путём для новичков.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.dua",
     "releases": [
+      {
+        "version": "1.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/iQ1W82CMR67P6Q"
+      },
       {
         "version": "1.1.0",
         "notes": "Добавлен экран добровольной поддержки, доступный с главной и из настроек.",
@@ -493,6 +538,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.kada",
     "releases": [
       {
+        "version": "1.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/1dMGAyQgSnoezQ"
+      },
+      {
         "version": "1.1.0",
         "notes": "Добавлен экран добровольной поддержки, доступный из карточки «Када» и настроек.",
         "apkUrl": "https://disk.yandex.ru/d/7XjLUlIGvpYqBw"
@@ -513,6 +563,11 @@ const catalogApps = [
     "description": "Исламский планер с отметками намазов, задачами дня, вечерней мухасабой и недельной сводкой.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.muhasaba",
     "releases": [
+      {
+        "version": "1.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/LMQeaVdUxCmLCQ"
+      },
       {
         "version": "1.1.0",
         "notes": "Добавлен экран добровольной поддержки, доступный с главной и из настроек.",
@@ -556,6 +611,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.saum",
     "releases": [
       {
+        "version": "1.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/V7IiqeibANOm3A"
+      },
+      {
         "version": "1.1.0",
         "notes": "Добавлена возможность добровольно поддержать разработчика.",
         "apkUrl": "https://disk.yandex.ru/d/eOisqU-06eCMQg"
@@ -576,6 +636,11 @@ const catalogApps = [
     "description": "200 сунн и наставлений на каждый день с арабским текстом, переводом смысла и ссылками на источники.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.sunna",
     "releases": [
+      {
+        "version": "1.1.4",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/VrAPOzHLKIBoig"
+      },
       {
         "version": "1.1.3",
         "notes": "Добавлен экран добровольной поддержки на семи языках интерфейса. Он доступен с главной и из настроек.",
@@ -598,6 +663,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.umra",
     "releases": [
       {
+        "version": "1.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/vbHZfxJNljJaaw"
+      },
+      {
         "version": "1.1.0",
         "notes": "Добавлен экран добровольной поддержки, доступный с главной и из раздела «Ещё».",
         "apkUrl": "https://disk.yandex.ru/d/tXPjc83gpSYUXw"
@@ -618,6 +688,11 @@ const catalogApps = [
     "description": "Офлайн-помощник для заучивания аятов и повторения по памяти.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.hifz",
     "releases": [
+      {
+        "version": "1.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/JLimTAER0jP3jw"
+      },
       {
         "version": "1.1.0",
         "notes": "Добавлен экран добровольной поддержки, доступный с главной и из настроек.",
@@ -641,6 +716,11 @@ const catalogApps = [
     "badgeText": "Милое",
     "storeUrl": "https://www.rustore.ru/catalog/app/ru.auskraft.pet_diary",
     "releases": [
+      {
+        "version": "1.0.6",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/VNZhE0c0VZ7zGg"
+      },
       {
         "version": "1.0.5",
         "notes": "Обновлено окно оценки приложения. Оно открывается в компактной панели и не мешает вводу, документам или действиям по напоминаниям.",
@@ -769,6 +849,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.calculatoraus",
     "releases": [
       {
+        "version": "1.0.3",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/DIq6zViyyrjomg"
+      },
+      {
         "version": "1.0.1",
         "notes": "Длинные результаты отображаются компактно. Нажатие показывает полное число, а копирование сохраняет точность.",
         "apkUrl": "https://disk.yandex.ru/d/4zJMTzBOe4GmYQ"
@@ -850,6 +935,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.natsukashi_yoru",
     "releases": [
       {
+        "version": "1.8.3",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/IUjnlcRKXOPesA"
+      },
+      {
         "version": "1.8.2",
         "notes": "Добавлены отдельные настройки управления в играх. Доступные варианты включают крестовину, джойстик, наклон и кнопки. Улучшен интерфейс.",
         "apkUrl": "https://disk.yandex.ru/d/8fDkxw-BXz302g"
@@ -865,6 +955,11 @@ const catalogApps = [
     "description": "Танковая ретро-аркада с кампанией, боссами, режимом выживания и ежедневным испытанием.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.natsukashi_tanks",
     "releases": [
+      {
+        "version": "1.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/1kJQ_pcFW-B4Ig"
+      },
       {
         "version": "1.1.0",
         "notes": "Добавлены музыка и звуковые эффекты с настройкой громкости. Вражеские танки появляются с разных сторон.",
@@ -883,6 +978,11 @@ const catalogApps = [
     "badgeText": "Милое",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chisana_kodomo",
     "releases": [
+      {
+        "version": "1.9.10",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/WqYS9KE-gzHRMw"
+      },
       {
         "version": "1.9.9",
         "notes": "Улучшено воспроизведение голосовых подсказок и обработка нажатий в игре со звуками животных.",
