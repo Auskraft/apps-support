@@ -28,11 +28,11 @@ content:
         options:
           values:
             - name: cloudtips
-              label: CloudTips
+              label: CloudTips (Тинькофф)
             - name: robokassa
               label: Robokassa
             - name: yookassa
-              label: ЮKassa
+              label: ЮKassa (Сбер)
       - name: cloudtips
         label: Ссылка CloudTips
         type: string
