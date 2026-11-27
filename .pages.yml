@@ -1,3 +1,10 @@
+media:
+  - name: brand
+    label: Логотип Auskraft
+    input: assets/brand
+    output: assets/brand
+    extensions: [png]
+
 content:
   - name: payment
     label: Поддержка по карте
@@ -7,6 +14,12 @@ content:
     operations:
       delete: false
     fields:
+      - name: brandLogo
+        label: Auskraft
+        type: image
+        readonly: true
+        options:
+          media: brand
       - name: activeProvider
         label: Куда ведёт кнопка поддержки
         type: select
@@ -17,7 +30,7 @@ content:
             - name: cloudtips
               label: CloudTips
             - name: robokassa
-              label: Робокасса
+              label: Robokassa
             - name: yookassa
               label: ЮKassa
       - name: cloudtips
@@ -28,7 +41,7 @@ content:
           regex: '^(?:https://pay\.cloudtips\.ru/[^/?#\s\\][^\s\\]*)?$'
           message: Вставьте полную ссылку на страницу поддержки с домена pay.cloudtips.ru.
       - name: robokassa
-        label: Ссылка Робокассы
+        label: Ссылка Robokassa
         type: string
         description: Многоразовая ссылка из личного кабинета магазина.
         pattern:
