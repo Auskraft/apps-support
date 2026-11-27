@@ -13,19 +13,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.blood_pressure_diary",
     "releases": [
       {
-        "version": "14.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/dc-bz4kzpYO29A"
-      },
-      {
-        "version": "14.1.0",
-        "notes": "В уведомлениях о лекарствах появились быстрые отметки «Принял» и «Отложить». Интервал откладывания и повторов настраивается отдельно для каждого профиля.",
-        "apkUrl": "https://disk.yandex.ru/d/pMz0ay2pILEkqQ"
-      },
-      {
-        "version": "14.0.0",
-        "notes": "Добавлены серии из двух–пяти измерений давления. Можно сохранить среднее или медиану одной записью, исходные значения остаются в дневнике.",
-        "apkUrl": null
+        "version": "14.1.4",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/SkZWNkx2l37b4A"
       }
     ]
   },
@@ -188,14 +178,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.purepdf",
     "releases": [
       {
-        "version": "1.8.5",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/VOZPeiY_jeRqcQ"
-      },
-      {
-        "version": "1.8.4",
-        "notes": "QR-код на экране поддержки стал крупнее и лучше читается на узких экранах.",
-        "apkUrl": "https://disk.yandex.ru/d/bITd9-ImjEvuRw"
+        "version": "1.8.6",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/yPaNV2M8x1otEg"
       }
     ]
   },
@@ -209,54 +194,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.work_shift_calendar",
     "releases": [
       {
-        "version": "31.0.2",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/bHc0dnfsculHlw"
-      },
-      {
-        "version": "31.0.1",
-        "notes": "Сегодняшний день выделен рамкой в обоих месячных виджетах. Цвета виджетов согласованы с темой, на стеклянной подложке улучшена читаемость.",
-        "apkUrl": "https://disk.yandex.ru/d/GQSCzh45TuBPsg"
-      },
-      {
-        "version": "31.0.0",
-        "notes": "В одном календаре можно сравнить смены двух профилей. В месячных виджетах появились стрелки для просмотра соседних месяцев.",
-        "apkUrl": null
-      },
-      {
-        "version": "30.1.0",
-        "notes": "В визуальном стиле появились 99 текстур, новые кириллические шрифты и отдельная настройка фона экрана и подложки месяца.",
-        "apkUrl": null
-      },
-      {
-        "version": "30.0.3",
-        "notes": "Добавлены проверки перехода к прошедшим месяцам и сохранности записей. Номер версии синхронизирован с «Графиком смен».",
-        "apkUrl": null
-      },
-      {
-        "version": "30.0.2",
-        "notes": "Переключатели дел и заметок доступны из любого формата календаря. Исправлены отступы и переносы текста.",
-        "apkUrl": null
-      },
-      {
-        "version": "30.0.1",
-        "notes": "Заметку можно редактировать в карточке дня. Изменения сохраняются по мере ввода.",
-        "apkUrl": null
-      },
-      {
-        "version": "30.0.0",
-        "notes": "У каждого дня появилась отдельная многострочная заметка. Дела и заметки можно скрыть из ленты.",
-        "apkUrl": null
-      },
-      {
-        "version": "25.2.2",
-        "notes": "Добавлено редактирование дел и выбор длительности отпуска с автоматическим расчётом даты окончания.",
-        "apkUrl": null
-      },
-      {
-        "version": "1.0.5",
-        "notes": "Улучшено резервное копирование на Яндекс Диск. При ошибке основной папки приложение сохраняет копию в отдельной папке «График работы».",
-        "apkUrl": null
+        "version": "31.0.5",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/ENMNr2l7dFTOCQ"
       }
     ]
   },
@@ -849,19 +789,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.calculatoraus",
     "releases": [
       {
-        "version": "1.0.3",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/DIq6zViyyrjomg"
-      },
-      {
-        "version": "1.0.1",
-        "notes": "Длинные результаты отображаются компактно. Нажатие показывает полное число, а копирование сохраняет точность.",
-        "apkUrl": "https://disk.yandex.ru/d/4zJMTzBOe4GmYQ"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первый выпуск. Обычный и инженерный калькулятор, конвертер единиц, история вычислений и выбор темы.",
-        "apkUrl": null
+        "version": "1.0.4",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/Y66roAxEES8TAQ"
       }
     ]
   },
@@ -875,14 +805,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.covert",
     "releases": [
       {
-        "version": "2.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/BMq3nrsRUkt3Iw"
-      },
-      {
-        "version": "2.1.0",
-        "notes": "Добавлен экран добровольной поддержки с QR-кодом. Его можно открыть с главного экрана и из настроек.",
-        "apkUrl": "https://disk.yandex.ru/d/pon9gma6b9wjBw"
+        "version": "2.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/Jrf3aiH7uFjc0g"
       }
     ]
   },
@@ -897,19 +822,9 @@ const catalogApps = [
     "badgeText": "Флагман",
     "releases": [
       {
-        "version": "0.1.2",
-        "notes": "Улучшен просмотр сложных 3D-моделей. При отображении больше не пропадают грани из-за прежнего ограничения.",
-        "apkUrl": "https://disk.yandex.ru/d/0EPpycJGtpb25Q"
-      },
-      {
-        "version": "0.1.1",
-        "notes": "Исправлен предпросмотр составных моделей 3MF и переходы внутри архивов.",
-        "apkUrl": null
-      },
-      {
-        "version": "0.1.0",
-        "notes": "Первый выпуск для просмотра документов, изображений, комиксов и 3D-моделей. Добавлено открытие и извлечение содержимого архивов.",
-        "apkUrl": null
+        "version": "0.1.4",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/BT-EfZ9o-a5pvQ"
       }
     ]
   },
@@ -923,14 +838,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.pharos",
     "releases": [
       {
-        "version": "1.0.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/7RjTf6Whd9WTaQ"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первый выпуск. Добавлены экранная лампа, фонарик, азбука Морзе, SOS, стробоскоп и ночной режим.",
-        "apkUrl": "https://disk.yandex.ru/d/UMRNDH0Bvd1JEg"
+        "version": "1.0.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/RmE0Rfe_obl2iw"
       }
     ]
   },
