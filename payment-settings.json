@@ -1,4 +1,5 @@
 {
+  "brandLogo": "assets/brand/auskraft.png",
   "activeProvider": "cloudtips",
   "cloudtips": "https://pay.cloudtips.ru/p/a015b36e",
   "robokassa": "",

@@ -45,8 +45,7 @@ a:focus-visible, summary:focus-visible, button:focus-visible, select:focus-visib
 .brand { display: inline-flex; gap: .65rem; align-items: center; flex-shrink: 0; }
 .brand-mark-logo {
   width: 2.55rem; height: 2.55rem; flex: none; border-radius: .6rem;
-  background: #4c6971 url("logo.png") center top / 4.35rem 4.35rem no-repeat;
-  border: 1px solid #637e7c;
+  background: #f7ecdb url("logo.png?v=arabesque") center / 84% auto no-repeat;
 }
 .brand > span:last-child { display: flex; align-items: center; gap: 1.25rem; }
 .brand strong { font-size: 1.55rem; line-height: 1; letter-spacing: -.045em; }
