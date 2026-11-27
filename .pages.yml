@@ -24,11 +24,13 @@ content:
         label: Куда ведёт кнопка поддержки
         type: select
         required: true
-        description: Все три ссылки публикуются на сайте. Вставляйте только многоразовые ссылки для посетителей. Пароли, секретные ключи и ссылки на личные счета клиентов сюда вводить нельзя.
+        description: Ссылки публикуются на сайте. Вставляйте только многоразовые ссылки для посетителей. Пароли, секретные ключи и ссылки на личные счета клиентов сюда вводить нельзя.
         options:
           values:
             - name: cloudtips
               label: CloudTips (Тинькофф)
+            - name: ozon
+              label: Ozon Банк
             - name: robokassa
               label: Robokassa
             - name: yookassa
@@ -40,6 +42,13 @@ content:
         pattern:
           regex: '^(?:https://pay\.cloudtips\.ru/[^/?#\s\\][^\s\\]*)?$'
           message: Вставьте полную ссылку на страницу поддержки с домена pay.cloudtips.ru.
+      - name: ozon
+        label: Ссылка Ozon Банка
+        type: string
+        description: Публичная ссылка СБП на форму добровольной поддержки.
+        pattern:
+          regex: '^(?:https://finance\.ozon\.ru/apps/sbp/ozonbankpay/[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12})?$'
+          message: Вставьте ссылку Ozon Банка в формате https://finance.ozon.ru/apps/sbp/ozonbankpay/…
       - name: robokassa
         label: Ссылка Robokassa
         type: string
