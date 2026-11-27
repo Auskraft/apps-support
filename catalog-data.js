@@ -188,6 +188,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.purepdf",
     "releases": [
       {
+        "version": "1.8.5",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/VOZPeiY_jeRqcQ"
+      },
+      {
         "version": "1.8.4",
         "notes": "QR-код на экране поддержки стал крупнее и лучше читается на узких экранах.",
         "apkUrl": "https://disk.yandex.ru/d/bITd9-ImjEvuRw"
@@ -449,6 +454,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.calendar",
     "releases": [
       {
+        "version": "1.0.2",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/ikuN7W6wjWrNIQ"
+      },
+      {
         "version": "1.0.1",
         "notes": "Добавлен экран добровольной поддержки и исправлено название календаря.",
         "apkUrl": "https://disk.yandex.ru/d/d19_5gR2S0S3Iw"
@@ -522,6 +532,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.zakat",
     "releases": [
       {
+        "version": "0.1.3",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/75BtiApP1sFWnw"
+      },
+      {
         "version": "0.1.2",
         "notes": "Добавлен экран добровольной поддержки, доступный с главной и из справки.",
         "apkUrl": "https://disk.yandex.ru/d/vSfFYIXPW6Yieg"
@@ -589,6 +604,11 @@ const catalogApps = [
     "description": "Офлайн-расчёт времени намазов, компас Киблы, напоминания с азаном и пошаговые руководства по омовению.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.namaz",
     "releases": [
+      {
+        "version": "1.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/OXqN6hv_op3_SA"
+      },
       {
         "version": "1.1",
         "notes": "Добавлен экран добровольной поддержки. Приложение называется «Салят (Намаз)».",
@@ -763,6 +783,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.archivatoraus",
     "releases": [
       {
+        "version": "1.0.2",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/CFTa9G51NhbSvg"
+      },
+      {
         "version": "1.0.1",
         "notes": "Главный экран стал компактнее, обновлены навигация и настройки, добавлены доступные в приложении юридические документы.",
         "apkUrl": "https://disk.yandex.ru/d/TV9x1dB0opEw9w"
@@ -784,6 +809,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chimenoir",
     "releases": [
       {
+        "version": "8.1.6",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/IS8y0oVak3y5Kg"
+      },
+      {
         "version": "8.1.5",
         "notes": "Добавлено 18 кириллических шрифтов для заголовков и основного текста. Подписи кнопок и навигации адаптируются к выбранному шрифту.",
         "apkUrl": "https://disk.yandex.ru/d/H5VcHcmXUPfrwg"
@@ -800,6 +830,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chime",
     "releases": [
       {
+        "version": "8.1.4",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/LqX3KYe60RfYjA"
+      },
+      {
         "version": "8.1.3",
         "notes": "Кнопки секундомера стали шире, чтобы подпись «Продолжить» помещалась на компактных экранах.",
         "apkUrl": "https://disk.yandex.ru/d/W7riUqgR99bFow"
@@ -815,6 +850,11 @@ const catalogApps = [
     "description": "Будильник с собственными звуками, настройкой сигнала, повтора и оформлением экрана звонка.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.morne",
     "releases": [
+      {
+        "version": "2.8.2",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/9S7okJNmqAAHMA"
+      },
       {
         "version": "2.8.1",
         "notes": "Улучшено отображение экрана звонка поверх блокировки. Добавлен резервный способ показать экран, пока будильник звонит.",
@@ -875,6 +915,11 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.covert",
     "releases": [
       {
+        "version": "2.1.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/BMq3nrsRUkt3Iw"
+      },
+      {
         "version": "2.1.0",
         "notes": "Добавлен экран добровольной поддержки с QR-кодом. Его можно открыть с главного экрана и из настроек.",
         "apkUrl": "https://disk.yandex.ru/d/pon9gma6b9wjBw"
@@ -917,6 +962,11 @@ const catalogApps = [
     "description": "Фонарик и цветная экранная лампа с регулировкой яркости, сигналом SOS и передачей азбуки Морзе.",
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.pharos",
     "releases": [
+      {
+        "version": "1.0.1",
+        "notes": "Мелкие исправления",
+        "apkUrl": "https://disk.yandex.ru/d/7RjTf6Whd9WTaQ"
+      },
       {
         "version": "1.0.0",
         "notes": "Первый выпуск. Добавлены экранная лампа, фонарик, азбука Морзе, SOS, стробоскоп и ночной режим.",
