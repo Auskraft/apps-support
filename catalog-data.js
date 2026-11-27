@@ -359,19 +359,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.muhasaba",
     "releases": [
       {
-        "version": "1.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/LMQeaVdUxCmLCQ"
-      },
-      {
-        "version": "1.1.0",
-        "notes": "Добавлен экран добровольной поддержки, доступный с главной и из настроек.",
-        "apkUrl": "https://disk.yandex.ru/d/3N4xuWZkGoxVxg"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первая версия",
-        "apkUrl": null
+        "version": "1.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/trM_h3qEDvC52Q"
       }
     ]
   },
@@ -411,19 +401,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.saum",
     "releases": [
       {
-        "version": "1.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/V7IiqeibANOm3A"
-      },
-      {
-        "version": "1.1.0",
-        "notes": "Добавлена возможность добровольно поддержать разработчика.",
-        "apkUrl": "https://disk.yandex.ru/d/eOisqU-06eCMQg"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первая версия",
-        "apkUrl": null
+        "version": "1.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/OtcwJ0zrdClBmQ"
       }
     ]
   },
@@ -437,19 +417,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.sunna",
     "releases": [
       {
-        "version": "1.1.4",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/VrAPOzHLKIBoig"
-      },
-      {
-        "version": "1.1.3",
-        "notes": "Добавлен экран добровольной поддержки на семи языках интерфейса. Он доступен с главной и из настроек.",
-        "apkUrl": "https://disk.yandex.ru/d/nqUXozJuHFWd3g"
-      },
-      {
-        "version": "1.1.2",
-        "notes": "Для каждой из 200 сунн подготовлена отдельная иллюстрация. Значки перенесены в угол, а изображения оптимизированы для работы офлайн.",
-        "apkUrl": null
+        "version": "1.1.5",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/Kp3xLYsmPAffgA"
       }
     ]
   },
@@ -463,19 +433,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.umra",
     "releases": [
       {
-        "version": "1.1.1",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/vbHZfxJNljJaaw"
-      },
-      {
-        "version": "1.1.0",
-        "notes": "Добавлен экран добровольной поддержки, доступный с главной и из раздела «Ещё».",
-        "apkUrl": "https://disk.yandex.ru/d/tXPjc83gpSYUXw"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первый выпуск с иллюстрированными этапами умры, счётчиками тавафа и са‘я, дуа и чек-листом.",
-        "apkUrl": null
+        "version": "1.1.2",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/DaRPRaCCo08YhQ"
       }
     ]
   },
@@ -553,19 +513,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.archivatoraus",
     "releases": [
       {
-        "version": "1.0.2",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/CFTa9G51NhbSvg"
-      },
-      {
-        "version": "1.0.1",
-        "notes": "Главный экран стал компактнее, обновлены навигация и настройки, добавлены доступные в приложении юридические документы.",
-        "apkUrl": "https://disk.yandex.ru/d/TV9x1dB0opEw9w"
-      },
-      {
-        "version": "1.0.0",
-        "notes": "Первый выпуск с просмотром и распаковкой архивов, созданием ZIP с паролем, проводником, поиском и светлой и тёмной темами.",
-        "apkUrl": null
+        "version": "1.0.3",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/XovVsRDqIru8KQ"
       }
     ]
   },
@@ -579,14 +529,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chimenoir",
     "releases": [
       {
-        "version": "8.1.6",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/IS8y0oVak3y5Kg"
-      },
-      {
-        "version": "8.1.5",
-        "notes": "Добавлено 18 кириллических шрифтов для заголовков и основного текста. Подписи кнопок и навигации адаптируются к выбранному шрифту.",
-        "apkUrl": "https://disk.yandex.ru/d/H5VcHcmXUPfrwg"
+        "version": "8.1.7",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/Xz3R7i3iHzq-CQ"
       }
     ]
   },
@@ -600,14 +545,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chime",
     "releases": [
       {
-        "version": "8.1.4",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/LqX3KYe60RfYjA"
-      },
-      {
-        "version": "8.1.3",
-        "notes": "Кнопки секундомера стали шире, чтобы подпись «Продолжить» помещалась на компактных экранах.",
-        "apkUrl": "https://disk.yandex.ru/d/W7riUqgR99bFow"
+        "version": "8.1.5",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/wK3JS4FStuM5zA"
       }
     ]
   },
@@ -621,14 +561,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.morne",
     "releases": [
       {
-        "version": "2.8.2",
-        "notes": "Мелкие исправления",
-        "apkUrl": "https://disk.yandex.ru/d/9S7okJNmqAAHMA"
-      },
-      {
-        "version": "2.8.1",
-        "notes": "Улучшено отображение экрана звонка поверх блокировки. Добавлен резервный способ показать экран, пока будильник звонит.",
-        "apkUrl": "https://disk.yandex.ru/d/AMNQnUfOxBJBtA"
+        "version": "2.8.3",
+        "notes": "Мелкие доработки",
+        "apkUrl": "https://disk.yandex.ru/d/mjvLreCpV_EeVg"
       }
     ]
   },
