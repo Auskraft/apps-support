@@ -31,8 +31,8 @@ content:
               label: CloudTips (Тинькофф)
             - name: ozon
               label: Ozon Банк
-            - name: robokassa
-              label: Robokassa
+            - name: godonate
+              label: GoDonate
             - name: yookassa
               label: ЮKassa (Сбер)
       - name: cloudtips
@@ -49,13 +49,13 @@ content:
         pattern:
           regex: '^(?:https://finance\.ozon\.ru/apps/sbp/ozonbankpay/[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12})?$'
           message: Вставьте ссылку Ozon Банка в формате https://finance.ozon.ru/apps/sbp/ozonbankpay/…
-      - name: robokassa
-        label: Ссылка Robokassa
+      - name: godonate
+        label: Ссылка GoDonate
         type: string
-        description: Многоразовая ссылка из личного кабинета магазина.
+        description: Публичная ссылка на профиль для донатов.
         pattern:
-          regex: '^(?:https://(?:auth\.robokassa\.ru|robo\.market)/[^/?#\s\\][^\s\\]*)?$'
-          message: Введите платёжную ссылку HTTPS с домена auth.robokassa.ru или robo.market.
+          regex: '^(?:https://godonate\.ru/@[A-Za-z0-9_-]+)?$'
+          message: Укажите публичную ссылку GoDonate в формате https://godonate.ru/@имя.
       - name: yookassa
         label: Ссылка ЮKassa
         type: string
