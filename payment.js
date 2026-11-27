@@ -15,7 +15,7 @@ const paymentCodes = new Map([
     alt: "QR-код для добровольного перевода через Ozon Банк",
   }],
   ["https://godonate.ru/@auskraft", {
-    src: "godonate-support-qr.png?v=teal-1184",
+    src: "godonate-support-qr.png?v=original",
     alt: "QR-код для добровольного перевода через GoDonate",
   }],
 ]);
