@@ -20,9 +20,8 @@ const paymentCodes = new Map([
   }],
 ]);
 
-const pagesBase = "https://auskraft.github.io/apps-support/";
 const primaryBase = "https://auskraft.ru/support-apps/";
-const primaryHost = location.hostname === "auskraft.ru" || location.hostname === "www.auskraft.ru";
+const pagesHost = location.hostname === "auskraft.github.io";
 
 async function readPaymentJson(address, limit) {
   const controller = new AbortController();
@@ -47,28 +46,18 @@ function paymentDestination(settings) {
 }
 
 async function getPaymentDestination() {
-  if (primaryHost) {
-    try { return paymentDestination(await readPaymentJson("payment-settings.php", 4000)); }
-    catch { return paymentDestination(await readPaymentJson(pagesBase + "payment-settings.json", 4500)); }
-  }
-  return paymentDestination(await readPaymentJson("payment-settings.json", 4500));
-}
-
-async function primaryHandoff(status) {
-  if (location.hostname !== "auskraft.github.io" || status.dataset.paymentHandoff !== primaryBase + "payment.html") return null;
-  try {
-    const route = await readPaymentJson("support-site.json", 1600);
-    if (route?.activeSite !== "sprinthost") return null;
-    paymentDestination(await readPaymentJson(primaryBase + "payment-settings.php", 2400));
-    return status.dataset.paymentHandoff;
-  } catch { return null; }
+  const endpoint = pagesHost ? primaryBase + "payment-settings.php" : "payment-settings.php";
+  return paymentDestination(await readPaymentJson(endpoint, 4000));
 }
 
 async function openPayment(status) {
   status.textContent = "Открываем платёжную страницу…";
+  if (pagesHost) {
+    window.location.replace(primaryBase + "payment.html");
+    return;
+  }
   try {
-    const primary = await primaryHandoff(status);
-    window.location.replace(primary || await getPaymentDestination());
+    window.location.replace(await getPaymentDestination());
   } catch {
     status.textContent = "Не удалось открыть платёжную страницу. Попробуйте ещё раз чуть позже.";
     document.getElementById("payment-retry").hidden = false;
