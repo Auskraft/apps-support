@@ -29,9 +29,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.injection_diary",
     "releases": [
       {
-        "version": "10.1.4",
+        "version": "10.1.5",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/DahKxP_MdS-UcQ"
+        "apkUrl": "https://disk.yandex.ru/d/1oRXDSVlAe9vsw"
       }
     ]
   },
