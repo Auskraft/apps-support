@@ -454,9 +454,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.calculatoraus",
     "releases": [
       {
-        "version": "1.0.4",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%20AUS/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%20AUS%20%E2%80%94%201.0.4%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
+        "version": "1.0.5",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%20AUS/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%20AUS%20%E2%80%94%201.0.5%20%28%D0%BA%D0%BE%D0%B4%206%29.apk"
       }
     ]
   },

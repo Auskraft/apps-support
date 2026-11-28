@@ -119,6 +119,7 @@ function renderApp(app) {
     history.remove();
   }
   detail.replaceChildren(view);
+  globalThis.AuskraftCatalogDocuments?.render(view, app);
 }
 
 function selectApp(app) {
