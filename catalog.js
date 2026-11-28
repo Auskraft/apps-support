@@ -58,6 +58,16 @@ function renderReleaseNotes(container, notes) {
   container.append(list);
 }
 
+function catalogLink(value) {
+  if (typeof value !== "string" || !value.trim()) return "";
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" && !url.username && !url.password ? url.href : "";
+  } catch {
+    return "";
+  }
+}
+
 function renderRelease(release) {
   const row = versionTemplate.content.firstElementChild.cloneNode(true);
   row.querySelector(".catalog-version-number").textContent = release.version;
@@ -87,7 +97,9 @@ function renderChangelog(details, sections) {
 
 function renderApp(app) {
   const view = detailTemplate.content.firstElementChild.cloneNode(true);
-  const availableReleases = app.releases.filter(release => release.apkUrl?.trim());
+  const availableReleases = app.releases
+    .map(release => ({...release, apkUrl: catalogLink(release.apkUrl)}))
+    .filter(release => release.apkUrl);
   const [current] = availableReleases;
   view.querySelector(".catalog-icon").src = app.icon;
   view.querySelector("h2").textContent = app.name;
@@ -99,8 +111,9 @@ function renderApp(app) {
     highlights.remove();
   }
   const storeLink = view.querySelector(".catalog-store-link");
-  if (app.storeUrl) {
-    storeLink.href = app.storeUrl;
+  const storeUrl = catalogLink(app.storeUrl);
+  if (storeUrl) {
+    storeLink.href = storeUrl;
   } else {
     storeLink.remove();
   }
