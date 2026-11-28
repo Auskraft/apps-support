@@ -15,7 +15,7 @@ const catalogApps = [
       {
         "version": "14.1.4",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/SkZWNkx2l37b4A"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%B0%20%E2%80%94%2014.1.4%20%28%D0%BA%D0%BE%D0%B4%2030%29.apk"
       }
     ]
   },
@@ -31,7 +31,7 @@ const catalogApps = [
       {
         "version": "10.1.5",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/1oRXDSVlAe9vsw"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D1%83%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2%20%28GLP-1%29/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D1%83%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2%20%28GLP-1%29%20%E2%80%94%2010.1.5%20%28%D0%BA%D0%BE%D0%B4%2016%29.apk"
       }
     ]
   },
@@ -45,9 +45,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.tabletki",
     "releases": [
       {
-        "version": "8.3.3",
+        "version": "8.3.4",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/rv9PtncHuLzNZQ"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BA%D0%B8%20%E2%80%94%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC%20%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BA%D0%B8%20%E2%80%94%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC%20%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%20%E2%80%94%208.3.4%20%28%D0%BA%D0%BE%D0%B4%2014%29.apk"
       }
     ]
   },
@@ -62,9 +62,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.tablitnica",
     "releases": [
       {
-        "version": "8.3.3",
+        "version": "8.3.4",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/4wG9A2GOMf2E4w"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D1%86%D0%B0/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D1%86%D0%B0%20%E2%80%94%208.3.4%20%28%D0%BA%D0%BE%D0%B4%2032%29.apk"
       }
     ]
   },
@@ -80,7 +80,7 @@ const catalogApps = [
       {
         "version": "1.8.6",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/yPaNV2M8x1otEg"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/Pure%20PDF/Pure%20PDF%20%E2%80%94%201.8.6%20%28%D0%BA%D0%BE%D0%B4%20186%29.apk"
       }
     ]
   },
@@ -96,7 +96,7 @@ const catalogApps = [
       {
         "version": "31.0.5",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/ENMNr2l7dFTOCQ"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D1%81%D0%BC%D0%B5%D0%BD/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%20%D1%81%D0%BC%D0%B5%D0%BD%20%E2%80%94%2031.0.5%20%28%D0%BA%D0%BE%D0%B4%2018%29.apk"
       }
     ]
   },
@@ -113,7 +113,7 @@ const catalogApps = [
       {
         "version": "31.0.5",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/HzPXJgCmU3vO1g"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD%20%E2%80%94%2031.0.5%20%2846%29.apk"
       }
     ]
   },
@@ -131,7 +131,7 @@ const catalogApps = [
       {
         "version": "1.0.5",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/0EdRA2WC2ImpFw"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD%20PRO/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD%20PRO%20%E2%80%94%201.0.5%20%28%D0%BA%D0%BE%D0%B4%2034%29.apk"
       }
     ]
   },
@@ -145,9 +145,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.rotating_shift_pvz",
     "releases": [
       {
-        "version": "1.0.5",
+        "version": "1.0.6",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/26aM_g31NIPaXA"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD%20%D0%9F%D0%92%D0%97/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD%20%D0%9F%D0%92%D0%97%20%E2%80%94%201.0.6%20%28%D0%BA%D0%BE%D0%B4%207%29.apk"
       }
     ]
   },
@@ -165,7 +165,7 @@ const catalogApps = [
       {
         "version": "11.1.5",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/PQhT_UQtzfOwaw"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%97%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20AUS/%D0%97%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20AUS%20%E2%80%94%2011.1.5%20%28%D0%BA%D0%BE%D0%B4%2027%29.apk"
       }
     ]
   },
@@ -181,7 +181,7 @@ const catalogApps = [
       {
         "version": "1.0.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/4Wkfo_rO6ZMekw"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8C/%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8C%20%E2%80%94%201.0.3%20%28%D0%BA%D0%BE%D0%B4%20103%29.apk"
       }
     ]
   },
@@ -195,9 +195,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.wird",
     "releases": [
       {
-        "version": "1.1.2",
+        "version": "1.1.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/675RzpiwLkgxwg"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%92%D0%B8%D1%80%D0%B4/%D0%92%D0%B8%D1%80%D0%B4%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -211,9 +211,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.dua",
     "releases": [
       {
-        "version": "1.1.2",
+        "version": "1.1.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/I76tNlz4t4jB-A"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D1%83%D0%B0/%D0%94%D1%83%D0%B0%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -229,7 +229,7 @@ const catalogApps = [
       {
         "version": "0.1.4",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/OUmn40kW8ubSYA"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%97%D0%B0%D0%BA%D1%8F%D1%82/%D0%97%D0%B0%D0%BA%D1%8F%D1%82%20%E2%80%94%200.1.4%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -243,9 +243,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.kada",
     "releases": [
       {
-        "version": "1.1.2",
+        "version": "1.1.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/e3J2REZc4_pMrQ"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9A%D0%B0%D0%B4%D0%B0%20%28%D0%A2%D1%80%D0%B5%D0%BA%D0%B5%D1%80%20%D0%BF%D1%80%D0%BE%D0%BF%D1%83%D1%89%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%BD%D0%B0%D0%BC%D0%B0%D0%B7%D0%BE%D0%B2%29/%D0%9A%D0%B0%D0%B4%D0%B0%20%28%D0%A2%D1%80%D0%B5%D0%BA%D0%B5%D1%80%20%D0%BF%D1%80%D0%BE%D0%BF%D1%83%D1%89%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%BD%D0%B0%D0%BC%D0%B0%D0%B7%D0%BE%D0%B2%29%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -259,9 +259,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.muhasaba",
     "releases": [
       {
-        "version": "1.1.2",
+        "version": "1.1.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/trM_h3qEDvC52Q"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9C%D1%83%D1%85%D0%B0%D1%81%D0%B0%D0%B1%D0%B0/%D0%9C%D1%83%D1%85%D0%B0%D1%81%D0%B0%D0%B1%D0%B0%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -277,7 +277,7 @@ const catalogApps = [
       {
         "version": "1.1.2",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/tZsT_bpvoYMqqg"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A1%D0%B0%D0%BB%D1%8F%D1%82%20%28%D0%9D%D0%B0%D0%BC%D0%B0%D0%B7%29/%D0%A1%D0%B0%D0%BB%D1%8F%D1%82%20%28%D0%9D%D0%B0%D0%BC%D0%B0%D0%B7%29%20%E2%80%94%201.1.2%20%28%D0%BA%D0%BE%D0%B4%204%29.apk"
       }
     ]
   },
@@ -291,9 +291,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.saum",
     "releases": [
       {
-        "version": "1.1.2",
+        "version": "1.1.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/OtcwJ0zrdClBmQ"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A1%D0%B0%D1%83%D0%BC/%D0%A1%D0%B0%D1%83%D0%BC%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -307,9 +307,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.sunna",
     "releases": [
       {
-        "version": "1.1.5",
+        "version": "1.1.6",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/Kp3xLYsmPAffgA"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A1%D1%83%D0%BD%D0%BD%D1%8B%20%28%D8%B3%D9%8F%D9%86%D9%8E%D9%91%D8%A9%E2%80%8E%20%29/%D0%A1%D1%83%D0%BD%D0%BD%D1%8B%20%28%D8%B3%D9%8F%D9%86%D9%8E%D9%91%D8%A9%E2%80%8E%20%29%20%E2%80%94%201.1.6%20%28%D0%BA%D0%BE%D0%B4%209%29.apk"
       }
     ]
   },
@@ -323,9 +323,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.umra",
     "releases": [
       {
-        "version": "1.1.2",
+        "version": "1.1.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/DaRPRaCCo08YhQ"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A3%D0%BC%D1%80%D0%B0/%D0%A3%D0%BC%D1%80%D0%B0%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -339,9 +339,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.hifz",
     "releases": [
       {
-        "version": "1.1.2",
+        "version": "1.1.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/RJfJ2LDHrBizhg"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A5%D0%B8%D1%84%D0%B7/%D0%A5%D0%B8%D1%84%D0%B7%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -357,9 +357,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/ru.auskraft.pet_diary",
     "releases": [
       {
-        "version": "1.0.7",
+        "version": "1.0.8",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/z7_cZi_WOh4GoA"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B0%20%E2%80%94%201.0.8%20%28%D0%BA%D0%BE%D0%B4%2010%29.apk"
       }
     ]
   },
@@ -375,7 +375,7 @@ const catalogApps = [
       {
         "version": "1.0.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/XovVsRDqIru8KQ"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%90%D1%80%D1%85%D0%B8%D0%B2%D0%B0%D1%82%D0%BE%D1%80%20AUS/%D0%90%D1%80%D1%85%D0%B8%D0%B2%D0%B0%D1%82%D0%BE%D1%80%20AUS%20%E2%80%94%201.0.3%20%28%D0%BA%D0%BE%D0%B4%204%29.apk"
       }
     ]
   },
@@ -391,7 +391,7 @@ const catalogApps = [
       {
         "version": "8.1.7",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/Xz3R7i3iHzq-CQ"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%20Noir%29/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%20Noir%29%20%E2%80%94%208.1.7%20%28%D0%BA%D0%BE%D0%B4%2013%29.apk"
       }
     ]
   },
@@ -407,7 +407,7 @@ const catalogApps = [
       {
         "version": "8.1.5",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/wK3JS4FStuM5zA"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%29/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%29%20%E2%80%94%208.1.5%20%28%D0%BA%D0%BE%D0%B4%2019%29.apk"
       }
     ]
   },
@@ -423,7 +423,7 @@ const catalogApps = [
       {
         "version": "2.8.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/mjvLreCpV_EeVg"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Morn%C3%A9%29/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Morn%C3%A9%29%20%E2%80%94%202.8.3%20%28%D0%BA%D0%BE%D0%B4%20283%29.apk"
       }
     ]
   },
@@ -440,7 +440,7 @@ const catalogApps = [
       {
         "version": "2.0.7",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/S5ygTIb_rj1a5g"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20Chime%20Pro/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20Chime%20Pro%20%E2%80%94%202.0.7%20%2828%29.apk"
       }
     ]
   },
@@ -456,7 +456,7 @@ const catalogApps = [
       {
         "version": "1.0.4",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/Y66roAxEES8TAQ"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%20AUS/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%20AUS%20%E2%80%94%201.0.4%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -472,7 +472,7 @@ const catalogApps = [
       {
         "version": "2.1.2",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/Jrf3aiH7uFjc0g"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%20%E2%80%94%202.1.2%20%28%D0%BA%D0%BE%D0%B4%20212%29.apk"
       }
     ]
   },
@@ -489,7 +489,7 @@ const catalogApps = [
       {
         "version": "0.1.4",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/BT-EfZ9o-a5pvQ"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%BB%D0%BA%D0%B8%D0%BD/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%BB%D0%BA%D0%B8%D0%BD%20%E2%80%94%200.1.4%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -505,7 +505,7 @@ const catalogApps = [
       {
         "version": "1.0.2",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/RmE0Rfe_obl2iw"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A4%D0%BE%D0%BD%D0%B0%D1%80%D0%B8%D0%BA%20%28Pharos%29/%D0%A4%D0%BE%D0%BD%D0%B0%D1%80%D0%B8%D0%BA%20%28Pharos%29%20%E2%80%94%201.0.2%20%28%D0%BA%D0%BE%D0%B4%203%29.apk"
       }
     ]
   },
@@ -520,9 +520,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.natsukashi_yoru",
     "releases": [
       {
-        "version": "1.8.4",
+        "version": "1.8.5",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/hOSzWNwei0aZ6g"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/Natsukashi%20Yoru/Natsukashi%20Yoru%20%E2%80%94%201.8.5%20%28%D0%BA%D0%BE%D0%B4%207%29.apk"
       }
     ]
   },
@@ -536,9 +536,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.natsukashi_tanks",
     "releases": [
       {
-        "version": "1.1.2",
+        "version": "1.1.3",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/6-Oy6d4BBuM7fg"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/Natsukashi%20Yoru%20Tanks/Natsukashi%20Yoru%20Tanks%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -554,9 +554,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chisana_kodomo",
     "releases": [
       {
-        "version": "1.9.11",
+        "version": "1.9.12",
         "notes": "Мелкие доработки",
-        "apkUrl": "https://disk.yandex.ru/d/DJ5IaOZoug5lbw"
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A1hisana%20kodomo/%D0%A1hisana%20kodomo%20%E2%80%94%201.9.12%20%28%D0%BA%D0%BE%D0%B4%208%29.apk"
       }
     ]
   }

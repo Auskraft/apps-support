@@ -64,7 +64,7 @@ function renderRelease(release) {
   renderReleaseNotes(row.querySelector(".catalog-release-notes"), release.notes);
   const download = row.querySelector(".catalog-download");
   download.href = release.apkUrl;
-  download.setAttribute("aria-label", `Скачать версию ${release.version} с Яндекс Диска`);
+  download.setAttribute("aria-label", `Скачать APK версии ${release.version}`);
   return row;
 }
 
