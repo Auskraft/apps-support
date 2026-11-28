@@ -13,9 +13,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.blood_pressure_diary",
     "releases": [
       {
-        "version": "14.1.4",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%B0%20%E2%80%94%2014.1.4%20%28%D0%BA%D0%BE%D0%B4%2030%29.apk"
+        "version": "14.1.5",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%B0%20%E2%80%94%2014.1.5%20%28%D0%BA%D0%BE%D0%B4%2031%29.apk"
       }
     ]
   },
@@ -29,9 +29,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.injection_diary",
     "releases": [
       {
-        "version": "10.1.5",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D1%83%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2%20%28GLP-1%29/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D1%83%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2%20%28GLP-1%29%20%E2%80%94%2010.1.5%20%28%D0%BA%D0%BE%D0%B4%2016%29.apk"
+        "version": "10.1.6",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D1%83%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2%20%28GLP-1%29/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D1%83%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2%20%28GLP-1%29%20%E2%80%94%2010.1.6%20%28%D0%BA%D0%BE%D0%B4%2017%29.apk"
       }
     ]
   },
@@ -45,9 +45,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.tabletki",
     "releases": [
       {
-        "version": "8.3.4",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BA%D0%B8%20%E2%80%94%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC%20%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BA%D0%B8%20%E2%80%94%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC%20%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%20%E2%80%94%208.3.4%20%28%D0%BA%D0%BE%D0%B4%2014%29.apk"
+        "version": "8.3.5",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BA%D0%B8%20%E2%80%94%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC%20%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BA%D0%B8%20%E2%80%94%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC%20%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%20%E2%80%94%208.3.5%20%28%D0%BA%D0%BE%D0%B4%2015%29.apk"
       }
     ]
   },
@@ -62,9 +62,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.tablitnica",
     "releases": [
       {
-        "version": "8.3.4",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D1%86%D0%B0/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D1%86%D0%B0%20%E2%80%94%208.3.4%20%28%D0%BA%D0%BE%D0%B4%2032%29.apk"
+        "version": "8.3.5",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D1%86%D0%B0/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D1%86%D0%B0%20%E2%80%94%208.3.5%20%28%D0%BA%D0%BE%D0%B4%2033%29.apk"
       }
     ]
   },
@@ -357,9 +357,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/ru.auskraft.pet_diary",
     "releases": [
       {
-        "version": "1.0.8",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B0%20%E2%80%94%201.0.8%20%28%D0%BA%D0%BE%D0%B4%2010%29.apk"
+        "version": "1.0.9",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B0/%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B0%20%E2%80%94%201.0.9%20%28%D0%BA%D0%BE%D0%B4%2011%29.apk"
       }
     ]
   },
@@ -520,9 +520,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.natsukashi_yoru",
     "releases": [
       {
-        "version": "1.8.5",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/Natsukashi%20Yoru/Natsukashi%20Yoru%20%E2%80%94%201.8.5%20%28%D0%BA%D0%BE%D0%B4%207%29.apk"
+        "version": "1.8.6",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/Natsukashi%20Yoru/Natsukashi%20Yoru%20%E2%80%94%201.8.6%20%28%D0%BA%D0%BE%D0%B4%208%29.apk"
       }
     ]
   },
@@ -536,9 +536,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.natsukashi_tanks",
     "releases": [
       {
-        "version": "1.1.3",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/Natsukashi%20Yoru%20Tanks/Natsukashi%20Yoru%20Tanks%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
+        "version": "1.1.4",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/Natsukashi%20Yoru%20Tanks/Natsukashi%20Yoru%20Tanks%20%E2%80%94%201.1.4%20%28%D0%BA%D0%BE%D0%B4%206%29.apk"
       }
     ]
   },
@@ -554,9 +554,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chisana_kodomo",
     "releases": [
       {
-        "version": "1.9.12",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A1hisana%20kodomo/%D0%A1hisana%20kodomo%20%E2%80%94%201.9.12%20%28%D0%BA%D0%BE%D0%B4%208%29.apk"
+        "version": "1.9.13",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A1hisana%20kodomo/%D0%A1hisana%20kodomo%20%E2%80%94%201.9.13%20%28%D0%BA%D0%BE%D0%B4%209%29.apk"
       }
     ]
   }
