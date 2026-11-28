@@ -145,9 +145,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.rotating_shift_pvz",
     "releases": [
       {
-        "version": "1.0.6",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD%20%D0%9F%D0%92%D0%97/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD%20%D0%9F%D0%92%D0%97%20%E2%80%94%201.0.6%20%28%D0%BA%D0%BE%D0%B4%207%29.apk"
+        "version": "1.0.7",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD%20%D0%9F%D0%92%D0%97/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D1%81%D0%BC%D0%B5%D0%BD%20%D0%9F%D0%92%D0%97%20%E2%80%94%201.0.7%20%28%D0%BA%D0%BE%D0%B4%208%29.apk"
       }
     ]
   },
@@ -227,9 +227,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.zakat",
     "releases": [
       {
-        "version": "0.1.4",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%97%D0%B0%D0%BA%D1%8F%D1%82/%D0%97%D0%B0%D0%BA%D1%8F%D1%82%20%E2%80%94%200.1.4%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
+        "version": "0.1.5",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%97%D0%B0%D0%BA%D1%8F%D1%82/%D0%97%D0%B0%D0%BA%D1%8F%D1%82%20%E2%80%94%200.1.5%20%28%D0%BA%D0%BE%D0%B4%206%29.apk"
       }
     ]
   },
@@ -339,9 +339,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.hifz",
     "releases": [
       {
-        "version": "1.1.3",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A5%D0%B8%D1%84%D0%B7/%D0%A5%D0%B8%D1%84%D0%B7%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
+        "version": "1.1.4",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A5%D0%B8%D1%84%D0%B7/%D0%A5%D0%B8%D1%84%D0%B7%20%E2%80%94%201.1.4%20%28%D0%BA%D0%BE%D0%B4%206%29.apk"
       }
     ]
   },
@@ -373,9 +373,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.archivatoraus",
     "releases": [
       {
-        "version": "1.0.3",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%90%D1%80%D1%85%D0%B8%D0%B2%D0%B0%D1%82%D0%BE%D1%80%20AUS/%D0%90%D1%80%D1%85%D0%B8%D0%B2%D0%B0%D1%82%D0%BE%D1%80%20AUS%20%E2%80%94%201.0.3%20%28%D0%BA%D0%BE%D0%B4%204%29.apk"
+        "version": "1.0.4",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%90%D1%80%D1%85%D0%B8%D0%B2%D0%B0%D1%82%D0%BE%D1%80%20AUS/%D0%90%D1%80%D1%85%D0%B8%D0%B2%D0%B0%D1%82%D0%BE%D1%80%20AUS%20%E2%80%94%201.0.4%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
       }
     ]
   },
@@ -389,9 +389,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chimenoir",
     "releases": [
       {
-        "version": "8.1.7",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%20Noir%29/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%20Noir%29%20%E2%80%94%208.1.7%20%28%D0%BA%D0%BE%D0%B4%2013%29.apk"
+        "version": "8.1.8",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%20Noir%29/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%20Noir%29%20%E2%80%94%208.1.8%20%28%D0%BA%D0%BE%D0%B4%2014%29.apk"
       }
     ]
   },
@@ -405,9 +405,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.chime",
     "releases": [
       {
-        "version": "8.1.5",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%29/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%29%20%E2%80%94%208.1.5%20%28%D0%BA%D0%BE%D0%B4%2019%29.apk"
+        "version": "8.1.6",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%29/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Chime%29%20%E2%80%94%208.1.6%20%28%D0%BA%D0%BE%D0%B4%2020%29.apk"
       }
     ]
   },
@@ -438,9 +438,9 @@ const catalogApps = [
     "highlights": "Из всех моих будильников у этого больше всего настроек оформления. Есть 300 тем. Для экрана звонка можно выбрать отдельную тему или своё фото.",
     "releases": [
       {
-        "version": "2.0.7",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20Chime%20Pro/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20Chime%20Pro%20%E2%80%94%202.0.7%20%2828%29.apk"
+        "version": "2.0.8",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20Chime%20Pro/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20Chime%20Pro%20%E2%80%94%202.0.8%20%28%D0%BA%D0%BE%D0%B4%2029%29.apk"
       }
     ]
   },
@@ -487,9 +487,9 @@ const catalogApps = [
     "badgeText": "Флагман",
     "releases": [
       {
-        "version": "0.1.4",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%BB%D0%BA%D0%B8%D0%BD/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%BB%D0%BA%D0%B8%D0%BD%20%E2%80%94%200.1.4%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
+        "version": "0.1.5",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%BB%D0%BA%D0%B8%D0%BD/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D0%BB%D0%BA%D0%B8%D0%BD%20%E2%80%94%200.1.5%20%28%D0%BA%D0%BE%D0%B4%206%29.apk"
       }
     ]
   },
