@@ -78,9 +78,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.purepdf",
     "releases": [
       {
-        "version": "1.8.6",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/Pure%20PDF/Pure%20PDF%20%E2%80%94%201.8.6%20%28%D0%BA%D0%BE%D0%B4%20186%29.apk"
+        "version": "1.8.7",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/Pure%20PDF/Pure%20PDF%20%E2%80%94%201.8.7%20%28%D0%BA%D0%BE%D0%B4%20187%29.apk"
       }
     ]
   },
@@ -179,9 +179,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.calendar",
     "releases": [
       {
-        "version": "1.0.3",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8C/%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8C%20%E2%80%94%201.0.3%20%28%D0%BA%D0%BE%D0%B4%20103%29.apk"
+        "version": "1.0.4",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8C/%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8C%20%E2%80%94%201.0.4%20%28%D0%BA%D0%BE%D0%B4%20104%29.apk"
       }
     ]
   },
@@ -195,9 +195,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.wird",
     "releases": [
       {
-        "version": "1.1.3",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%92%D0%B8%D1%80%D0%B4/%D0%92%D0%B8%D1%80%D0%B4%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
+        "version": "1.1.4",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%92%D0%B8%D1%80%D0%B4/%D0%92%D0%B8%D1%80%D0%B4%20%E2%80%94%201.1.4%20%28%D0%BA%D0%BE%D0%B4%206%29.apk"
       }
     ]
   },
@@ -291,9 +291,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.saum",
     "releases": [
       {
-        "version": "1.1.3",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A1%D0%B0%D1%83%D0%BC/%D0%A1%D0%B0%D1%83%D0%BC%20%E2%80%94%201.1.3%20%28%D0%BA%D0%BE%D0%B4%205%29.apk"
+        "version": "1.1.4",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A1%D0%B0%D1%83%D0%BC/%D0%A1%D0%B0%D1%83%D0%BC%20%E2%80%94%201.1.4%20%28%D0%BA%D0%BE%D0%B4%206%29.apk"
       }
     ]
   },
@@ -421,9 +421,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.morne",
     "releases": [
       {
-        "version": "2.8.3",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Morn%C3%A9%29/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Morn%C3%A9%29%20%E2%80%94%202.8.3%20%28%D0%BA%D0%BE%D0%B4%20283%29.apk"
+        "version": "2.8.4",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Morn%C3%A9%29/%D0%91%D1%83%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%20%28Morn%C3%A9%29%20%E2%80%94%202.8.4%20%28%D0%BA%D0%BE%D0%B4%20284%29.apk"
       }
     ]
   },
@@ -503,9 +503,9 @@ const catalogApps = [
     "storeUrl": "https://www.rustore.ru/catalog/app/com.auskraft.pharos",
     "releases": [
       {
-        "version": "1.0.2",
-        "notes": "Мелкие доработки",
-        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A4%D0%BE%D0%BD%D0%B0%D1%80%D0%B8%D0%BA%20%28Pharos%29/%D0%A4%D0%BE%D0%BD%D0%B0%D1%80%D0%B8%D0%BA%20%28Pharos%29%20%E2%80%94%201.0.2%20%28%D0%BA%D0%BE%D0%B4%203%29.apk"
+        "version": "1.0.3",
+        "notes": "Юридические документы доступны без интернета. При подключении загружается актуальная редакция.",
+        "apkUrl": "https://auskraft.ru/support-apps/APK%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0/%D0%A4%D0%BE%D0%BD%D0%B0%D1%80%D0%B8%D0%BA%20%28Pharos%29/%D0%A4%D0%BE%D0%BD%D0%B0%D1%80%D0%B8%D0%BA%20%28Pharos%29%20%E2%80%94%201.0.3%20%28%D0%BA%D0%BE%D0%B4%204%29.apk"
       }
     ]
   },
